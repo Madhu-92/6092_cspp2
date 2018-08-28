@@ -28,15 +28,16 @@ public class Solution {
 		int c = scan.nextInt();
 		rootsOfQuadraticEquation(a, b, c);
 	}
-	/*
-	Need to write the rootsOfQuadraticEquation function and print the output.
+	/**
+	*Need to write the rootsOfQuadraticEquation function
+	*and print the output.
 	*/
 	public static void rootsOfQuadraticEquation(int a, int b, int c) {
 		/*
 	    *rootsof quadratic equation method
 	    */
-		double x = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
-		double y = (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+		double x = (-b + Math.sqrt(b * b - 2 * 2 * a * c)) / (2 * a);
+		double y = (-b - Math.sqrt(b * b - 2 * 2 * a * c)) / (2 * a);
 		System.out.println(x + " " + y);
 	}
 

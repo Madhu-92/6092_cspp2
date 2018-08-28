@@ -12,6 +12,10 @@ public class Solution {
     /**
     *@param args int
     */
+    private Solution(){
+        /* this is a constructor
+        */
+    }
     public static void main(final String[] args) {
         /*
         *main method

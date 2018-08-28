@@ -9,16 +9,14 @@ public class Solution {
     /**
     *Do not modify this main function.
     */
-    private Solution(){
+    private Solution() {
         /* this is a constructor
         */
     }
-    /*
-    *main method
+    /** this is method
     *@param args String
     */
     public static void main(final String[] args) {
-
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
         int b = scan.nextInt();

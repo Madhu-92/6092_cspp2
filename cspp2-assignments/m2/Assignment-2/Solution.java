@@ -14,17 +14,8 @@ public class Solution {
 	    *main method
 	    */
 		Scanner scan = new Scanner(System.in);
-		/**
-        * @param a int
-        */
 		int a = scan.nextInt();
-		/**
-        * @param b int
-        */
 		int b = scan.nextInt();
-		/**
-        * @param c int
-        */
 		int c = scan.nextInt();
 		rootsOfQuadraticEquation(a, b, c);
 	}

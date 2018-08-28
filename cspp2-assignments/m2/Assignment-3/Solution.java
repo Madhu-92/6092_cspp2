@@ -6,7 +6,7 @@ import java.util.Scanner;
 * Solution class.
 */
 public final class Solution {
-    /*
+    /**
     Do not modify this main function.
     */
     private Solution() {
@@ -27,7 +27,7 @@ public final class Solution {
     *Need to write the power function and print the output.
     *@param base int
     *@param exponent int
-    *@param return power of two arguments
+    *@return power of two arguments
     */
     public static long power(final long base, final long exponent) {
         /*
@@ -35,11 +35,9 @@ public final class Solution {
         */
         if (exponent == 0) {
              return 1;
-         }
-        else if (exponent == 1) {
+         }else if (exponent == 1) {
              return base;
-         }
-        else {
+         }else {
             return base * power(base, exponent - 1);
         }
     }

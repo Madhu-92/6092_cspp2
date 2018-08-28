@@ -9,6 +9,9 @@ public class Solution {
     /**
     *Do not modify this main function.
     */
+    /**
+    *@param args int
+    */
     public static void main(final String[] args) {
         /*
         *main method
@@ -17,7 +20,7 @@ public class Solution {
         int a = scan.nextInt();
         int b = scan.nextInt();
         int c = scan.nextInt();
-        rootsOfQuadraticEquation(a, b, c);
+        roots(a, b, c);
     }
     /**
     *Need to write the rootsOfQuadraticEquation function
@@ -26,7 +29,7 @@ public class Solution {
     *@param b int
     *@param c int
     */
-    public static void rootsOfQuadraticEquation(final int a, final int b, final int c) {
+    public static void roots(final int a, final int b, final int c) {
         /*
         *rootsof quadratic equation method
         */

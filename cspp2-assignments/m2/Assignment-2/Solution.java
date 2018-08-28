@@ -5,15 +5,15 @@ import java.util.Scanner;
 /**
 * Solution class.
 */
-public class Solution {
+public final class Solution {
     /**
     *Do not modify this main function.
     */
     private Solution() {
-        /* this is a constructor
+        /* this is a constructor.
         */
     }
-    /** this is method
+    /** this is method.
     *@param args String
     */
     public static void main(final String[] args) {
@@ -24,7 +24,7 @@ public class Solution {
         roots(a, b, c);
     }
     /**
-    *Need to write the rootsOfQuadraticEquation function
+    *Need to write the rootsOfQuadraticEquation function.
     *and print the output.
     *@param a int
     *@param b int
@@ -32,7 +32,7 @@ public class Solution {
     */
     public static void roots(final int a, final int b, final int c) {
         /*
-        *rootsof quadratic equation method
+        *rootsof quadratic equation method.
         */
         double x = (-b + Math.sqrt(b * b - 2 * 2 * a * c)) / (2 * a);
         double y = (-b - Math.sqrt(b * b - 2 * 2 * a * c)) / (2 * a);

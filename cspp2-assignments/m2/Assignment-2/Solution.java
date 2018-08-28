@@ -15,15 +15,15 @@ public class Solution {
 	    */
 		Scanner scan = new Scanner(System.in);
 		/**
-        * @param a
+        * @param a int
         */
 		int a = scan.nextInt();
 		/**
-        * @param b
+        * @param b int
         */
 		int b = scan.nextInt();
 		/**
-        * @param c
+        * @param c int
         */
 		int c = scan.nextInt();
 		rootsOfQuadraticEquation(a, b, c);
@@ -32,7 +32,7 @@ public class Solution {
 	*Need to write the rootsOfQuadraticEquation function
 	*and print the output.
 	*/
-	public static void rootsOfQuadraticEquation(int a, int b, int c) {
+	public static void rootsOfQuadraticEquation(final int a, final int b, final int c) {
 		/*
 	    *rootsof quadratic equation method
 	    */

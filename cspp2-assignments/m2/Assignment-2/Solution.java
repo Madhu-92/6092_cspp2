@@ -22,6 +22,9 @@ public class Solution {
 	/**
 	*Need to write the rootsOfQuadraticEquation function
 	*and print the output.
+	*@param a int
+	*@param b int
+	*@param c int
 	*/
 	public static void rootsOfQuadraticEquation(final int a, final int b, final int c) {
 		/*

@@ -19,8 +19,11 @@ public class Solution {
 	/*
 	Need to write the rootsOfQuadraticEquation function and print the output.
 	*/
+	/**
+    * rootsofQuadraticEquation class
+    */
 	public static void rootsOfQuadraticEquation(int a, int b, int c) {
-		double x = (-b + Math.sqrt(b * b - 4 *  a* c)) / (2 * a);
+		double x = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
 		double y = (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
 		System.out.println(x + " " + y);
 	}

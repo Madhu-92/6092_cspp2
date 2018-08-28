@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
 * Solution class.
 */
-public class Solution {
+public final class Solution {
     /*
     Do not modify this main function.
     */
@@ -27,7 +27,7 @@ public class Solution {
     *Need to write the power function and print the output.
     *@param base int
     *@param exponent int
-    *@param return long
+    *@param return tag
     */
     public static long power(final long base, final long exponent) {
         /*

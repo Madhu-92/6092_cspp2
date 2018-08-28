@@ -16,19 +16,20 @@ public class Solution {
     /** this is method.
     *@param args String
     */
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);      
+	public static void main(final String[] args) {
+		Scanner s = new Scanner(System.in);      
         int base = s.nextInt();
         int exponent = s.nextInt();
-        int result=power(base,exponent);
+        long result = power(base, exponent);
         System.out.println(result);
 	}
 	/**
 	*Need to write the power function and print the output.
 	*@param base int
 	*@param exponent int
+    *@param return long
 	*/
-	public static int power(int base, int exponent){
+	public static long power(final long base, final long exponent){
 		/*
         *power method.
         */

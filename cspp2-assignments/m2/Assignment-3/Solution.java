@@ -27,7 +27,7 @@ public final class Solution {
     *Need to write the power function and print the output.
     *@param base int
     *@param exponent int
-    *@param return tag
+    *@param return power of two arguments
     */
     public static long power(final long base, final long exponent) {
         /*
@@ -40,7 +40,7 @@ public final class Solution {
              return base;
          }
         else {
-            return base * power( base , exponent - 1); 
+            return base * power(base, exponent - 1);
         }
     }
 }

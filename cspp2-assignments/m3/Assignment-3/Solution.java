@@ -6,9 +6,9 @@ import java.util.Scanner;
 *Do not modify this main function.
 *Solution class
 */
-public class Solution {
+public final class Solution {
     /**
-    *constructor
+    *constructor.
     */
     private Solution() {
         /**
@@ -18,19 +18,19 @@ public class Solution {
     /** this is method.
     *@param args String
     */
-    public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);      
+    public static void main(final String[] args) {
+        Scanner s = new Scanner(System.in);
         int n1 = s.nextInt();
         int n2 = s.nextInt();
         System.out.println(gcd(n1, n2));
     }
     /**
-	*Need to write the gcd function and print the output.
+    *Need to write the gcd function and print the output.
     *@param n1 int
     *@param n2 int
     *@return power of two arguments
-	*/
-    public static int gcd(int n1, int n2) {
+    */
+    public static int gcd(final int n1,final int n2) {
         /**
         *gcd method.
         */

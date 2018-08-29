@@ -11,8 +11,12 @@ public final class Solution {
     *Magic numbers
     */
     static final int SEVEN = 7, TEN = 10;
+    /**
+    *Empty constructor.
+    */
     private Solution() {
-        /* this is a constructor.
+        /**
+        *Empty constructor.
         */
     }
     /** this is method.

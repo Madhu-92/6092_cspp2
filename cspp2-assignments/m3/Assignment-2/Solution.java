@@ -21,7 +21,7 @@ public final class Solution {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int i, count = 0;
-        for (i = 7 ; i < n ; i++) {
+        for (i = 7;i < n;i++) {
             int temp = i;
             while (temp >= 7) {
                 if (temp % 10 == 7) {

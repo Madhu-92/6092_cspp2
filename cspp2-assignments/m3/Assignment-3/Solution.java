@@ -30,7 +30,7 @@ public final class Solution {
     *@param n2 int
     *@return power of two arguments
     */
-    public static int gcd(final int n1,final int n2) {
+    public static int gcd(final int n1, final int n2) {
         /**
         *gcd method.
         */

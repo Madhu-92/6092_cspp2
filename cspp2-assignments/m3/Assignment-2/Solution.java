@@ -7,8 +7,10 @@ import java.util.Scanner;
 */
 public final class Solution {
     /**
-    Do not modify this main function.
+    *Do not modify this main function.
+    *Magic numbers
     */
+    static final int SEVEN = 7, TEN = 10;
     private Solution() {
         /* this is a constructor.
         */
@@ -21,13 +23,13 @@ public final class Solution {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int i, count = 0;
-        for (i = 7; i < n; i++) {
+        for (i = SEVEN; i < n; i++) {
             int temp = i;
-            while (temp >= 7) {
-                if (temp % 10 == 7) {
+            while (temp >= SEVEN) {
+                if (temp % TEN == SEVEN) {
                    count += 1;
                 }
-                temp /= 10;
+                temp /= TEN;
             }
         }
         System.out.println(count);

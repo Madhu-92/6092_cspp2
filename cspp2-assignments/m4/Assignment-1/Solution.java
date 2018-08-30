@@ -3,7 +3,7 @@
 */
 import java.util.Scanner;
 /**
-*solution class
+*solution class.
 */
 public final class Solution {
     /**
@@ -23,7 +23,7 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int a[];
+        int[] a;
         int temp = 0;
         a = new int[n];
         for (int i = 0; i < a.length; i++) {

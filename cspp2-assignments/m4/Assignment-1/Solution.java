@@ -20,17 +20,16 @@ public final class Solution {
     /** this is main method.
     *@param args String
     */
-    public static void main(final String[] args)
-    {
-        Scanner sc=new Scanner(System.in);
-        int n= sc.nextInt();
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int a[];
-        int temp=0;
+        int temp = 0;
         a = new int[n];
-        for (int i=0; i<a.length; i++) {
-            a[i]=sc.nextInt();
-            if (temp<a[i]) {
-                temp=a[i];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = sc.nextInt();
+            if (temp < a[i]) {
+                temp = a[i];
             }
         }
         System.out.println(temp);

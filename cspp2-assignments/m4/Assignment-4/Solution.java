@@ -7,7 +7,7 @@ import java.util.Scanner;
 */
 public final class Solution {
     /**
-    *Do not modify the main function 
+    *Do not modify the main function
     */
     /**
     *constructor.
@@ -33,7 +33,7 @@ public final class Solution {
     */
     public static String reverseString(final String s) {
         String reverse = "";
-        for (int i = s.length()-1; i >= 0; i--) {
+        for (int i = s.length() - 1; i >= 0; i--) {
             reverse = reverse + s.charAt(i);
         }
         return reverse;

@@ -33,7 +33,7 @@ public final class Solution {
     }
     /** this is main method.
     *@param s String
-    *@return 
+    *@return tag
     */
     public static int binaryToDecimal(final String s) {
         return (Integer.parseInt(s, 2));

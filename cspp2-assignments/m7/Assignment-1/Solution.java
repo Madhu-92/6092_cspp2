@@ -10,7 +10,7 @@ import java.util.Scanner;
     /**
      * { var_description }.
      */
-    static String input;
+    private String input;
     /**
      * { var_description }.
      */
@@ -18,11 +18,16 @@ import java.util.Scanner;
     /**
      * Constructs the object.
      *
-     * @param      input  The input
+     * @param      inputt  The input.
      */
     InputValidator(final String inputt) {
         this.input = inputt;
     }
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     boolean validateData() {
         return input.length() >= SIX;
     }
@@ -46,7 +51,7 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         /**
-         * { var_description }
+         * { var_description }.
          */
         Scanner s = new Scanner(System.in);
         String input = s.next();

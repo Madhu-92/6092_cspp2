@@ -1,8 +1,8 @@
-/**.
+/**
  * Scanner class
  */
 import java.util.Scanner;
-/**.
+/**
  * Class for input validator.
  */
 final class InputValidator {
@@ -20,18 +20,18 @@ final class InputValidator {
     }
 
 }
-/**.
+/**
  * Class for solution.
  */
 public final class Solution {
-    /**.
+    /**
     * Empty constructor.
     */
     private Solution() {
         //not used.
     }
 
-    /**.
+    /**
      * { function_description }
      *
      * @param      args  The arguments

@@ -6,10 +6,10 @@ import java.util.Scanner;
  * Class for input validator.
  */
     class InputValidator {
-    /**
-     * { item_description }
-     */
     /*Write the atrributes and methods for InputValidator*/
+    /**
+     * { var_description }.
+     */
     static String input;
     /**
      * { var_description }.
@@ -20,7 +20,7 @@ import java.util.Scanner;
      *
      * @param      input  The input
      */
-    public InputValidator(final String inputt) {
+    InputValidator(final String inputt) {
         this.input = inputt;
     }
     boolean validateData() {

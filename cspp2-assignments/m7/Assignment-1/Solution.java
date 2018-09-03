@@ -1,5 +1,5 @@
 /**
- * Scanner class
+ * Scanner class.
  */
 import java.util.Scanner;
 /**
@@ -24,7 +24,7 @@ import java.util.Scanner;
         this.input = inputt;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
@@ -45,7 +45,7 @@ public final class Solution {
     }
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      args  The arguments
      */

@@ -1,6 +1,14 @@
+/**
+ * BufferedInputStream class
+ */
 import java.io.BufferedInputStream;
+/**
+ * Scanner class
+ */
 import java.util.Scanner;
-
+/**
+ * List class
+ */
 public class List {
   //Implement all the methods mentioned to build a ListADT
   private int[] intArray;
@@ -55,7 +63,7 @@ public class List {
   // again, don't initialize it here
   // variable initialization should be done in the constructor
   private int size;
-  /*
+  /**
    * The purpose of the constructor is to initialize the
    * class variables with some default values.
    */
@@ -77,35 +85,35 @@ public class List {
 
   }
 
-  /*
+  /**
    * The add method does what the name suggests.
    * Add an int item to the list.
-   * The assumption is to store the item at the end of the list
+   * The assumption is to store the item at the end of the list.
    * What is the end of the list?
    * Is it the same as the end of the array?
-   * Think about how you can use the size variable to add item
+   * Think about how you can use the size variable to add item.
    * to the list.
    *
-   * The method returns void (nothing)
+   * The method returns void (nothing).
    */
   public final void add(int item) {
     //Inserts the specified element at the end of the list.
     intArray[size++] = item;
   }
 
-  /*
+  /**
    * The size method returns the value of the size.
    * The purpose of the method is to announce the size of the list
    * to the objects outside the list
    *
    * The method returns an int. Empty list should return 0.
    */
-  public int size() {
+  public final int size() {
     // replace the code below to implement the size method
     return size;
   }
 
-  /*
+  /**
    * The remove method does what the name suggests.
    * Removes an int item, specified by the index argument, from the list
    * It also does an additional step.
@@ -138,7 +146,7 @@ public class List {
     }
   }
 
-  /*
+  /**
    * Get method has to return the items that is
    * at the index position passed as an argument to the method.
    * If the item doesn't exist then return a -1 to indicate that
@@ -159,7 +167,7 @@ public class List {
     return -1;
   }
 
-  /*
+  /**
    * What happens when you print an object using println?
    * Java provides a method named toString that is internally
    * invoked when an object variable is used in println.
@@ -206,7 +214,7 @@ public class List {
 
   }
 
-  /*
+  /**
    * Returns the index of the first occurrence
    * of the specified element in this list,
    * or -1 if this list does not contain the element.

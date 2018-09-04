@@ -108,7 +108,7 @@ public class List {
    *
    * The method returns an int. Empty list should return 0.
    */
-  public final int size() {
+  public int size() {
     // replace the code below to implement the size method
     return size;
   }
@@ -133,7 +133,7 @@ public class List {
    * array = [1,3,0,0,0,0,0,0,0,0]
    * The method returns void (nothing)
    */
-  public final void remove(int index) {
+  public void remove(final int index) {
     // write the logic for remove here.
     // Think about what to do to the size variable.
     if (index > 0 && index < size) {
@@ -157,7 +157,7 @@ public class List {
    * How do we check if the position is greater than the
    * number of items in the list? Would size variable be useful?
    */
-  public final int get(int index) {
+  public int get(final int index) {
     // Replace the code below to write the code for get
     for (int i = 0; i < size; i++) {
       if (intArray[i] == intArray[index]) {
@@ -187,7 +187,7 @@ public class List {
    * not all the elements of the array.
    *
    */
-  public final String toString() {
+  public String toString() {
     // Replace the code below
     String tempStr = "[";
     for (int i = 0; i < size - 1; i++) {
@@ -203,7 +203,7 @@ public class List {
    * So, iterate through the list and return true if.
    * the item exists and otherwise false.
    */
-  public final boolean contains(int item) {
+  public boolean contains(final int item) {
     // Replace the code below
     for (int i = 0; i < size; i++) {
       if (intArray[i] == item) {
@@ -219,7 +219,7 @@ public class List {
    * of the specified element in this list,
    * or -1 if this list does not contain the element.
    */
-  public final int indexOf(int item) {
+  public int indexOf(final int item) {
     // Replace the code below
     for (int i = 0; i < size; i++) {
       if (intArray[i] == item) {
@@ -229,7 +229,11 @@ public class List {
     }
     return -1;
   }
-
+  /**
+   * Main method
+   *
+   * @param      args  The arguments
+   */
   public static void main(final String[] args) {
     // create an object of the list to invoke methods on it
     List l = new List();

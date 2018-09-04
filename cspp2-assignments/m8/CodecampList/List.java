@@ -119,7 +119,7 @@ public class List {
    *
    * The method returns an int. Empty list should return 0.
    */
-  /**
+  /**.
    * { size method }
    *
    * @return     returns the size
@@ -149,7 +149,7 @@ public class List {
    * array = [1,3,0,0,0,0,0,0,0,0]
    * The method returns void (nothing)
    */
-  /**
+  /**.
    * { remove method}
    *
    * @param      index  The index
@@ -178,7 +178,7 @@ public class List {
    * How do we check if the position is greater than the.
    * number of items in the list? Would size variable be useful?
    */
-  /**
+  /**.
    * { get method}
    *
    * @param      index  The index
@@ -236,7 +236,7 @@ public class List {
    * So, iterate through the list and return true if.
    * the item exists and otherwise false.
    */
-  /**
+  /**.
    * { contains method }
    *
    * @param      item  The item
@@ -276,7 +276,7 @@ public class List {
     return -1;
   }
   /**
-   * Main method
+   * Main method.
    *
    * @param      args  The arguments
    */
@@ -323,6 +323,7 @@ public class List {
       case "contains":
         System.out.println(l.contains(Integer.parseInt(tokens[1])));
         break;
+        default:
       }
     }
   }

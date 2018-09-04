@@ -150,8 +150,8 @@ public class List {
   public int get(int index) {
     // Replace the code below to write the code for get
     for (int i = 0; i < size ; i++) {
-      if (intArray[i] == index) {
-        return i;
+      if (intArray[i] == intArray[index]) {
+        return intArray[index];
       }
     }
     return -1;

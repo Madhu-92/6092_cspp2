@@ -275,7 +275,7 @@ public class List {
     }
     return -1;
   }
-  /**
+  /**.
    * { function_description }
    *
    * @param      item  The item
@@ -293,18 +293,18 @@ public class List {
     return count;
 
   }
-  /**
+  /**.
    * { function_description }
    *
    * @param      index  The index
    * @param      item   The item
    */
-  public void add(int index, int item) {
-    for (int i = size; i > index ; i--) {
-      intArray[i] = intArray[i - 1] ;
+  public void add(final int index, final int item) {
+    for (int i = size; i > index; i--) {
+      intArray[i] = intArray[i - 1];
     }
     intArray[index] = item;
-    size ++;
+    size++;
   }
 
   /**
@@ -312,7 +312,7 @@ public class List {
    *
    * @param      items  The items
    */
-  public void addAll(int[] items) {
+  public void addAll(final int[] items) {
     final int ten = 10;
     for (int i = 0; i < items.length; i++) {
       if (size <= ten) {
@@ -341,6 +341,7 @@ public class List {
       // split the line using space
       String[] tokens = line.split(" ");
       // based on the list operation invoke the corresponding method
+      final int ten = 10;
       switch (tokens[0]) {
       case "add":
         if (tokens.length == 2) {
@@ -380,11 +381,11 @@ public class List {
         System.out.println(l.count(Integer.parseInt(tokens[1])));
         break;
       case "addAll":
-        int[] items = new int [tokens.length - 1];
+        int[] items = new int[tokens.length - 1];
         for (int i = 0; i < tokens.length - 1; i++) {
           items[i] = Integer.parseInt(tokens[i + 1]);
         }
-        if (l.size() + items.length <= 10) {
+        if (l.size() + items.length <= ten) {
           l.addAll(items);
         }
         break;
@@ -393,3 +394,4 @@ public class List {
     }
   }
 }
+

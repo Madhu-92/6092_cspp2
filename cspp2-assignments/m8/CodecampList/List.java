@@ -88,7 +88,7 @@ public class List {
    *
    * The method returns void (nothing)
    */
-  public void add(int item) {
+  public final void add(int item) {
     //Inserts the specified element at the end of the list.
     intArray[size++] = item;
   }
@@ -125,7 +125,7 @@ public class List {
    * array = [1,3,0,0,0,0,0,0,0,0]
    * The method returns void (nothing)
    */
-  public void remove(int index) {
+  public final void remove(int index) {
     // write the logic for remove here.
     // Think about what to do to the size variable.
     if (index > 0 && index < size) {
@@ -133,7 +133,9 @@ public class List {
         intArray[i] = intArray[i + 1];
       }
       intArray[size--] = 0;
-    } else System.out.println("Invalid Position Exception");
+    } else {
+      System.out.println("Invalid Position Exception");
+    }
   }
 
   /*
@@ -147,9 +149,9 @@ public class List {
    * How do we check if the position is greater than the
    * number of items in the list? Would size variable be useful?
    */
-  public int get(int index) {
+  public final int get(int index) {
     // Replace the code below to write the code for get
-    for (int i = 0; i < size ; i++) {
+    for (int i = 0; i < size; i++) {
       if (intArray[i] == intArray[index]) {
         return intArray[index];
       }
@@ -177,7 +179,7 @@ public class List {
    * not all the elements of the array.
    *
    */
-  public String toString() {
+  public final String toString() {
     // Replace the code below
     String tempStr = "[";
     for (int i = 0; i < size - 1; i++) {
@@ -187,15 +189,15 @@ public class List {
     return tempStr;
   }
 
-  /*
-   * Contains return true if the list has
-   * the item passed as an argument to the method
-   * So, iterate through the list and return true if
-   * the item exists and otherwise false
+  /**
+   * Contains return true if the list has.
+   * the item passed as an argument to the method.
+   * So, iterate through the list and return true if.
+   * the item exists and otherwise false.
    */
-  public boolean contains(int item) {
+  public final boolean contains(int item) {
     // Replace the code below
-    for (int i = 0; i < size; i++ ) {
+    for (int i = 0; i < size; i++) {
       if (intArray[i] == item) {
       }
       return true;
@@ -209,9 +211,9 @@ public class List {
    * of the specified element in this list,
    * or -1 if this list does not contain the element.
    */
-  public int indexOf(int item) {
+  public final int indexOf(int item) {
     // Replace the code below
-    for (int i = 0; i < size ; i++ ) {
+    for (int i = 0; i < size; i++) {
       if (intArray[i] == item) {
         return i;
 
@@ -220,7 +222,7 @@ public class List {
     return -1;
   }
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     // create an object of the list to invoke methods on it
     List l = new List();
 

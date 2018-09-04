@@ -276,6 +276,54 @@ public class List {
     return -1;
   }
   /**
+   * { function_description }
+   *
+   * @param      item  The item
+   *
+   * @return     { description_of_the_return_value }
+   */
+  public int count(final int item) {
+    int count = 0;
+    for (int i = 0; i < size; i++) {
+      if (intArray[i] == item) {
+        count += 1;
+      }
+
+    }
+    return count;
+
+  }
+  /**
+   * { function_description }
+   *
+   * @param      index  The index
+   * @param      item   The item
+   */
+  public void add(int index, int item) {
+    for (int i = size; i > index ; i--) {
+      intArray[i] = intArray[i - 1] ;
+    }
+    intArray[index] = item;
+    size ++;
+  }
+
+  /**
+   * Adds all.
+   *
+   * @param      items  The items
+   */
+  public void addAll(int[] items) {
+    final int ten = 10;
+    for (int i = 0; i < items.length; i++) {
+      if (size <= ten) {
+        intArray[size++] = items[i];
+
+      }
+
+    }
+
+  }
+  /**
    * Main method.
    *
    * @param      args  The arguments
@@ -295,8 +343,13 @@ public class List {
       // based on the list operation invoke the corresponding method
       switch (tokens[0]) {
       case "add":
-        l.add(Integer.parseInt(tokens[1]));
+        if (tokens.length == 2) {
+          l.add(Integer.parseInt(tokens[1]));
+          break;
+        }
+        l.add(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
         break;
+
       case "size":
         // invoke size method and print the list size
         // BTW, list size is not the array size
@@ -322,6 +375,18 @@ public class List {
         break;
       case "contains":
         System.out.println(l.contains(Integer.parseInt(tokens[1])));
+        break;
+      case "count":
+        System.out.println(l.count(Integer.parseInt(tokens[1])));
+        break;
+      case "addAll":
+        int[] items = new int [tokens.length - 1];
+        for (int i = 0; i < tokens.length - 1; i++) {
+          items[i] = Integer.parseInt(tokens[i + 1]);
+        }
+        if (l.size() + items.length <= 10) {
+          l.addAll(items);
+        }
         break;
       default:
       }

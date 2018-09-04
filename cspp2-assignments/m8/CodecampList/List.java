@@ -246,8 +246,8 @@ public class List {
     // Replace the code below
     for (int i = 0; i < size; i++) {
       if (intArray[i] == item) {
+        return true;
       }
-      return true;
     }
     return false;
 
@@ -323,7 +323,7 @@ public class List {
       case "contains":
         System.out.println(l.contains(Integer.parseInt(tokens[1])));
         break;
-        default:
+      default:
       }
     }
   }

@@ -8,11 +8,11 @@ import java.util.Scanner;
     class InputValidator {
     /*Write the atrributes and methods for InputValidator*/
     /**
-     * { var_description }.
+     * input declaration.
      */
     private String input;
     /**
-     * { var_description }.
+     * Magic number intialization.
      */
     private static final int SIX = 6;
     /**
@@ -24,9 +24,9 @@ import java.util.Scanner;
         this.input = inputt;
     }
     /**
-     * { function_description }.
+     * validateData method
      *
-     * @return     { description_of_the_return_value }
+     * @return     returns either true or false.
      */
     boolean validateData() {
         return input.length() >= SIX;
@@ -45,16 +45,13 @@ public final class Solution {
     }
 
     /**
-     * { function_description }.
-     *
+     * Main method.
+     * In this method it calls InputValidator and valiData
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        /**
-         * { var_description }.
-         */
-        Scanner s = new Scanner(System.in);
-        String input = s.next();
+        Scanner obj = new Scanner(System.in);
+        String input = obj.next();
         InputValidator i = new InputValidator(input);
         System.out.println(i.validateData());
 

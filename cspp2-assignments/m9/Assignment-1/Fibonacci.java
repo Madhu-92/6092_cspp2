@@ -40,22 +40,21 @@ public final class Fibonacci {
   /**.
    * fib method
    *
-   * @param      n     fibonacci numbers
+   * @param      n     for inputing the number 
    *
-   * @return     { description_of_the_return_value }
+   * @return     { returns the object }
    */
   public static List fib(final int n) {
     // todo - complete this method
     List obj = new List(n);
     obj.add(0);
     obj.add(1);
-    int count, a = 0, b = 1, sum;
+    int count, indexOne = 0, indexTwo = 1, sum;
     for (int i = 2; i < n; i++) {
-      sum = a + b;
+      sum = indexOne + indexTwo;
       obj.add(sum);
-      //System.out.println(a);
-      a = b;
-      b = sum;
+      indexTwo = indexTwo;
+      indexTwo = sum;
     }
 
     return obj;

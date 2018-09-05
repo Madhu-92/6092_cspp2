@@ -121,7 +121,7 @@ public class List {
    */
   /**.
    * size method
-   * 
+   *
    * @return     returns the size of array.
    */
   public int size() {
@@ -180,7 +180,7 @@ public class List {
    */
   /**.
    * get method
-   * 
+   *
    * @param      index  The index
    *
    * @return     returns the index of a particular value.
@@ -310,17 +310,15 @@ public class List {
   /**
    * addsAll method
    * it adds the new array to the existing array.
-   * @param      items  The items
+   * @param      tempArray  The temorary array
    */
   public void addAll(final int[] tempArray) {
-    for (int i = 0; i<tempArray.length; i++) {
+    for (int i = 0; i < tempArray.length; i++) {
       intArray[size] = tempArray[i];
-      size++;  
+      size++;
     }
-     
   }
 
-  
   /**
    * Main method.
    *
@@ -379,10 +377,9 @@ public class List {
         System.out.println(l.count(Integer.parseInt(tokens[1])));
         break;
       case "addAll":
-        int[] tempArray = new int[tokens.length-1];
+        int[] tempArray = new int[tokens.length - 1];
         for (int i = 0; i < tokens.length - 1; i++) {
           tempArray[i] = Integer.parseInt(tokens[i + 1]);
-          
         }
         l.addAll(tempArray);
         // int[] items = new int[tokens.length - 1];

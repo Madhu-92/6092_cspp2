@@ -22,16 +22,17 @@ public final class Solution {
     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] a;
+        int sizeOfArray = sc.nextInt();
+        int[] arrayOfNumbers;
         int temp = 0;
-        a = new int[n];
-        for (int i = 0; i < a.length; i++) {
-            a[i] = sc.nextInt();
-            if (temp < a[i]) {
-                temp = a[i];
+        arrayOfNumbers = new int[sizeOfArray];
+        for (int i = 0; i < arrayOfNumbers.length; i++) {
+            arrayOfNumbers[i] = sc.nextInt();
+            if (temp < arrayOfNumbers[i]) {
+                temp = arrayOfNumbers[i];
             }
         }
         System.out.println(temp);
     }
 }
+

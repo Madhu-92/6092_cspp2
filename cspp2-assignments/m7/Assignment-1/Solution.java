@@ -24,7 +24,7 @@ import java.util.Scanner;
         this.input = inputt;
     }
     /**
-     * validateData method
+     * validateData method.
      *
      * @return     returns either true or false.
      */

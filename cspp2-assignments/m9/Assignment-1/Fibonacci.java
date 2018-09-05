@@ -29,7 +29,7 @@ public class Fibonacci {
      *
      * Look for the hint.txt if some of the testcases fail.
      */
-    /**
+    /**.
      * fib method
      *
      * @param      n     fibonacci numbers
@@ -53,8 +53,7 @@ public class Fibonacci {
         return obj;
     }
 
-    
-    /**
+    /**.
      * { main method}
      *
      * @param      args  The arguments

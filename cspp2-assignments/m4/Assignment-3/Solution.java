@@ -20,6 +20,7 @@ public final class Solution {
         */
     }
     /** this is main method.
+     * in this method it calls binaryToDecimal method.
     *@param args String
     */
     public static void main(final String[] args) {
@@ -27,12 +28,12 @@ public final class Solution {
         int n = sc.nextInt();
         for (int i = 0; i < n; i++) {
             String givenString = sc.next();
-            int res = binaryToDecimal(givenString); //Write binaryToDecimal function
+            int res = binaryToDecimal(givenString);
             System.out.println(res);
         }
     }
-    /** 
-     * this is main method.
+    /**
+     * this is binaryToDecimal method.
     *@param givenString String
     *@return returns the decimal number for the binary value.
     */
@@ -41,4 +42,3 @@ public final class Solution {
     }
 
 }
-

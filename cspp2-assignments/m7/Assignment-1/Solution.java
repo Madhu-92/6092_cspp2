@@ -26,7 +26,7 @@ import java.util.Scanner;
     /**
      * validateData method.
      *
-     * @return     returns either true or false.
+     * @return     returns either true if length>6 else returns false.
      */
     boolean validateData() {
         return input.length() >= SIX;
@@ -58,3 +58,4 @@ public final class Solution {
     }
 
 }
+

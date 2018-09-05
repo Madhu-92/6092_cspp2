@@ -10,32 +10,33 @@ public final class Solution {
     *Do not modify this main function.
     */
     private Solution() {
-        /* this is a empty constructor.
+        /* this is a constructor.
         */
     }
-    /** this is main method.
+    /** this is method.
     *@param args String
     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        int numOne = scan.nextInt();
-        int numTwo = scan.nextInt();
-        int numThree = scan.nextInt();
-        roots(numOne, numTwo, numThree);
+        int numA = scan.nextInt();
+        int numB = scan.nextInt();
+        int numC = scan.nextInt();
+        roots(numA, numB, numC);
     }
     /**
     *Need to write the rootsOfQuadraticEquation function.
     *and print the output.
-    *@param numOne int
-    *@param numTwo int
-    *@param numThree int
+    *@param numA int
+    *@param numB int
+    *@param numC int
     */
-    public static void roots(final int numOne, final int numTwo, final int numThree) {
+    public static void roots(final int numA, final int numB, final int numC) {
         /*
         *rootsof quadratic equation method.
         */
-        double x = (-numTwo + Math.sqrt(numTwo * numTwo - 2 * 2 * numOne * numThree)) / (2 * numOne);
-        double y = (-numTwo - Math.sqrt(numTwo * numTwo - 2 * 2 * numOne * numThree)) / (2 * numOne);
+        double x = (-numB + Math.sqrt(numB * numB - 2 * 2 * numA * numC)) / (2 * numA);
+        double y = (-numB - Math.sqrt(numB * numB - 2 * 2 * numA * numC)) / (2 * numA);
         System.out.println(x + " " + y);
     }
+
 }

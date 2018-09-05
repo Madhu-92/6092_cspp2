@@ -40,7 +40,7 @@ public final class Fibonacci {
   /**.
    * fib method
    *
-   * @param      n     for inputing the number 
+   * @param      n     for inputing the number.
    *
    * @return     { returns the object }
    */
@@ -53,7 +53,7 @@ public final class Fibonacci {
     for (int i = 2; i < n; i++) {
       sum = indexOne + indexTwo;
       obj.add(sum);
-      indexTwo = indexTwo;
+      indexOne = indexTwo;
       indexTwo = sum;
     }
 

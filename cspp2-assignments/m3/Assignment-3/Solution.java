@@ -15,34 +15,34 @@ public final class Solution {
         *this is a constructor.
         */
     }
-    /** this is method.
+    /** this is main method.
     *@param args String
     */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
-        int n1 = s.nextInt();
-        int n2 = s.nextInt();
-        System.out.println(gcd(n1, n2));
+        int numberOne = s.nextInt();
+        int numberTwo = s.nextInt();
+        System.out.println(gcd(numberOne, numberTwo));
     }
     /**
     *Need to write the gcd function and print the output.
-    *@param n1 int
-    *@param n2 int
+    *@param numberOne int
+    *@param numberTwo int
     *@return power of two arguments
     */
-    public static int gcd(final int n1, final int n2) {
+    public static int gcd(final int numberOne, final int numberTwo) {
         /**
         *gcd method.
         */
-        if (n1 == 0 || n2 == 0) {
+        if (numberOne == 0 || numberTwo == 0) {
             return 0;
         }
-        if  (n1 == n2) {
-            return n1;
+        if  (numberOne == numberTwo) {
+            return numberOne;
         }
-        if (n1 > n2) {
-            return gcd(n1 - n2, n2);
+        if (numberOne > numberTwo) {
+            return gcd(numberOne - numberTwo, numberTwo);
         }
-        return gcd(n1, n2 - n1);
+        return gcd(numberOne, numberTwo - numberOne);
     }
 }

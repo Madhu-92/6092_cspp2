@@ -104,7 +104,7 @@ public class List {
    */
   /**
    * add method.
-   *
+   * adds elements to the end of the array.
    * @param      item  The item
    */
   public void add(final int item) {
@@ -120,9 +120,9 @@ public class List {
    * The method returns an int. Empty list should return 0.
    */
   /**.
-   * { size method }
-   *
-   * @return     returns the size
+   * size method
+   * 
+   * @return     returns the size of array.
    */
   public int size() {
     // replace the code below to implement the size method
@@ -150,8 +150,8 @@ public class List {
    * The method returns void (nothing)
    */
   /**.
-   * { remove method}
-   *
+   * remove method
+   * This method removes an element from the array.
    * @param      index  The index
    */
   public void remove(final int index) {
@@ -179,11 +179,11 @@ public class List {
    * number of items in the list? Would size variable be useful?
    */
   /**.
-   * { get method}
-   *
+   * get method
+   * 
    * @param      index  The index
    *
-   * @return     { description_of_the_return_value }
+   * @return     returns the index of a particular value.
    */
   public int get(final int index) {
     // Replace the code below to write the code for get.
@@ -215,10 +215,10 @@ public class List {
    * not all the elements of the array.
    *
    */
-  /**
-   * Returns a string representation of the object.
+  /**.
+   * toString method
    *
-   * @return     String representation of the object.
+   * @return     returns only the elements in the array.
    */
   public String toString() {
     // Replace the code below
@@ -237,10 +237,10 @@ public class List {
    * the item exists and otherwise false.
    */
   /**.
-   * { contains method }
+   * contains method
    *
    * @param      item  The item
-   * @return     { description_of_the_return_value }
+   * @return     if array has item it returns true else false.
    */
   public boolean contains(final int item) {
     // Replace the code below
@@ -259,11 +259,11 @@ public class List {
    * or -1 if this list does not contain the element.
    */
   /**
-   * Searches for the first match.
+   * indexof method.
    *
    * @param      item  The item
    *
-   * @return     { description_of_the_return_value }
+   * @return     it returns the index position.
    */
   public int indexOf(final int item) {
     // Replace the code below
@@ -276,11 +276,11 @@ public class List {
     return -1;
   }
   /**.
-   * { function_description }
+   * count method
    *
    * @param      item  The item
    *
-   * @return     { description_of_the_return_value }
+   * @return     returns the count of the item.
    */
   public int count(final int item) {
     int count = 0;
@@ -294,8 +294,8 @@ public class List {
 
   }
   /**.
-   * { function_description }
-   *
+   * add method.
+   * adds a value without replacing the array value.
    * @param      index  The index
    * @param      item   The item
    */
@@ -308,21 +308,19 @@ public class List {
   }
 
   /**
-   * Adds all.
-   *
+   * addsAll method
+   * it adds the new array to the existing array.
    * @param      items  The items
    */
-  public void addAll(final int[] items) {
-    final int ten = 10;
-    for (int i = 0; i < items.length; i++) {
-      if (size <= ten) {
-        intArray[size++] = items[i];
-
-      }
-
+  public void addAll(final int[] tempArray) {
+    for (int i = 0; i<tempArray.length; i++) {
+      intArray[size] = tempArray[i];
+      size++;  
     }
-
+     
   }
+
+  
   /**
    * Main method.
    *
@@ -381,13 +379,19 @@ public class List {
         System.out.println(l.count(Integer.parseInt(tokens[1])));
         break;
       case "addAll":
-        int[] items = new int[tokens.length - 1];
+        int[] tempArray = new int[tokens.length-1];
         for (int i = 0; i < tokens.length - 1; i++) {
-          items[i] = Integer.parseInt(tokens[i + 1]);
+          tempArray[i] = Integer.parseInt(tokens[i + 1]);
+          
         }
-        if (l.size() + items.length <= ten) {
-          l.addAll(items);
-        }
+        l.addAll(tempArray);
+        // int[] items = new int[tokens.length - 1];
+        // for (int i = 0; i < tokens.length - 1; i++) {
+        //   items[i] = Integer.parseInt(tokens[i + 1]);
+        // }
+        // if (l.size() + items.length <= ten) {
+        //   l.addAll(items);
+        // }
         break;
       default:
       }

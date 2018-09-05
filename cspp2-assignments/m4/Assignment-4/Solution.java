@@ -18,23 +18,24 @@ public final class Solution {
         */
     }
     /** this is main method.
+     * In this it calls reverseString method.
     *@param args String
     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        String reverse = reverseString(s);
+        String strObj = sc.nextLine();
+        String reverse = reverseString(strObj);
         System.out.println(reverse);
     }
     //Write reverseString function
     /** this is main method.
-    *@param s String
+    *@param strObj String
     *@return tag
     */
-    public static String reverseString(final String s) {
+    public static String reverseString(final String strObj) {
         String reverse = "";
-        for (int i = s.length() - 1; i >= 0; i--) {
-            reverse = reverse + s.charAt(i);
+        for (int i = strObj.length() - 1; i >= 0; i--) {
+            reverse = reverse + strObj.charAt(i);
         }
         return reverse;
     }

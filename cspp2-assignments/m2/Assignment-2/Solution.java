@@ -18,24 +18,24 @@ public final class Solution {
     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        int numberOne = scan.nextInt();
-        int numberTwo = scan.nextInt();
-        int numberThree = scan.nextInt();
-        roots(numberOne, numberTwo, numberThree);
+        int numOne = scan.nextInt();
+        int numTwo = scan.nextInt();
+        int numThree = scan.nextInt();
+        roots(numOne, numTwo, numThree);
     }
     /**
     *Need to write the rootsOfQuadraticEquation function.
     *and print the output.
-    *@param numberOne int
-    *@param numberTwo int
-    *@param numberThree int
+    *@param numOne int
+    *@param numTwo int
+    *@param numThree int
     */
-    public static void roots(final int numberOne, final int numberTwo, final int numberThree) {
+    public static void roots(final int numOne, final int numTwo, final int numThree) {
         /*
         *rootsof quadratic equation method.
         */
-        double x = (-numberTwo + Math.sqrt(numberTwo * numberTwo - 2 * 2 * numberOne * numberThree)) / (2 * numberOne);
-        double y = (-numberTwo - Math.sqrt(numberTwo * numberTwo - 2 * 2 * numberOne * numberThree)) / (2 * numberOne);
+        double x = (-numTwo + Math.sqrt(numTwo * numTwo - 2 * 2 * numOne * numThree)) / (2 * numOne);
+        double y = (-numTwo - Math.sqrt(numTwo * numTwo - 2 * 2 * numOne * numThree)) / (2 * numOne);
         System.out.println(x + " " + y);
     }
 }

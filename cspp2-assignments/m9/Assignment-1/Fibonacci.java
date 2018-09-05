@@ -17,42 +17,51 @@ import java.util.Scanner;
  *
  */
 
+
+/**
+ * Class for fibonacci.
+ */
 public class Fibonacci {
-	/*
-	 * fib is a static method takes a argument n
-	 * n is the count of the fibonacci numbers to be generated.
-	 * The method returns a List with the n fibonacci numbers.
-	 *
-	 * Look for the hint.txt if some of the testcases fail.
-	 */
-	/**
-	 * fib method
-	 *
-	 * @param      n     fibonacci numbers
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public static List fib(final int n) {
-		// todo - complete this method
-		List obj = new List(n);
-		obj.add(0);
-		obj.add(1);
-		int count, a = 0, b = 1, sum;
-		for (int i = 2; i < n; i++) {
-			sum = a + b;
-			obj.add(sum);
-			//System.out.println(a);
-			a = b;
-			b = sum;
-		}
+    /*
+     * fib is a static method takes a argument n.
+     * n is the count of the fibonacci numbers to be generated.
+     * The method returns a List with the n fibonacci numbers.
+     *
+     * Look for the hint.txt if some of the testcases fail.
+     */
+    /**
+     * fib method
+     *
+     * @param      n     fibonacci numbers
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static List fib(final int n) {
+        // todo - complete this method
+        List obj = new List(n);
+        obj.add(0);
+        obj.add(1);
+        int count, a = 0, b = 1, sum;
+        for (int i = 2; i < n; i++) {
+            sum = a + b;
+            obj.add(sum);
+            //System.out.println(a);
+            a = b;
+            b = sum;
+        }
 
-		return obj;
-	}
+        return obj;
+    }
 
-
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		int n = s.nextInt();
-		System.out.println(fib(n));
-	}
+    
+    /**
+     * { main method}
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        System.out.println(fib(n));
+    }
 }

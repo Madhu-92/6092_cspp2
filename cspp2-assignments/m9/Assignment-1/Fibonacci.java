@@ -1,3 +1,6 @@
+/**
+ * Scanner class
+ */
 import java.util.Scanner;
 
 /*

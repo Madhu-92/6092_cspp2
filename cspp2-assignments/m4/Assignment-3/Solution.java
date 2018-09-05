@@ -26,17 +26,19 @@ public final class Solution {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for (int i = 0; i < n; i++) {
-            String s = sc.next();
-            int res = binaryToDecimal(s); //Write binaryToDecimal function
+            String givenString = sc.next();
+            int res = binaryToDecimal(givenString); //Write binaryToDecimal function
             System.out.println(res);
         }
     }
-    /** this is main method.
-    *@param s String
-    *@return tag
+    /** 
+     * this is main method.
+    *@param givenString String
+    *@return returns the decimal number for the binary value.
     */
-    public static int binaryToDecimal(final String s) {
-        return (Integer.parseInt(s, 2));
+    public static int binaryToDecimal(final String givenString) {
+        return (Integer.parseInt(givenString, 2));
     }
 
 }
+

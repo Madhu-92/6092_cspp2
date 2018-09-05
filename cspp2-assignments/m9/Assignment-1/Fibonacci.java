@@ -45,7 +45,7 @@ public final class Fibonacci {
    *
    * @param      n     for inputing the number.
    *
-   * @return     { returns the object }
+   * @return     returns the object.
    */
   public static List fib(final int n) {
     // todo - complete this method
@@ -64,13 +64,14 @@ public final class Fibonacci {
   }
 
   /**.
-   * { main method}
-   *
+   * Main method.
+   * In this method it calls the fib method.
    * @param      args  The arguments
    */
   public static void main(final String[] args) {
-    Scanner s = new Scanner(System.in);
-    int n = s.nextInt();
+    Scanner obj = new Scanner(System.in);
+    int n = obj.nextInt();
     System.out.println(fib(n));
   }
 }
+

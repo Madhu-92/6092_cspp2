@@ -22,36 +22,36 @@ public final class Solution {
     */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
-        int m = s.nextInt();
-        int n = s.nextInt();
-        int[][] a = new int[m][n];
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                a[i][j] = s.nextInt();
+        int rowOne = s.nextInt();
+        int columnOne = s.nextInt();
+        int[][] matrixOne = new int[rowOne][columnOne];
+        for (int i = 0; i < rowOne; i++) {
+            for (int j = 0; j < columnOne; j++) {
+                matrixOne[i][j] = s.nextInt();
             }
         }
 
-        int p = s.nextInt();
-        int q = s.nextInt();
-        int[][] b = new int[p][q];
-        for (int i = 0; i < p; i++) {
-            for (int j = 0; j < q; j++) {
-                b[i][j] = s.nextInt();
+        int rowTwo = s.nextInt();
+        int coumnTwo = s.nextInt();
+        int[][] matrixTwo = new int[rowTwo][coumnTwo];
+        for (int i = 0; i < rowTwo; i++) {
+            for (int j = 0; j < coumnTwo; j++) {
+                matrixTwo[i][j] = s.nextInt();
             }
         }
-        if (m == p && n == q) {
-            int[][] c = new int[m][n];
-            for (int i = 0; i < m; i++) {
-                for (int j = 0; j < n; j++) {
-                    c[i][j] = a[i][j] + b[i][j];
+        if (rowOne == rowTwo && columnOne == coumnTwo) {
+            int[][] finalMatrix = new int[rowOne][columnOne];
+            for (int i = 0; i < rowOne; i++) {
+                for (int j = 0; j < columnOne; j++) {
+                    finalMatrix[i][j] = matrixOne[i][j] + matrixTwo[i][j];
                 }
             }
-            for (int i = 0; i < m; i++) {
-                for (int j = 0; j < n - 1; j++) {
-                    c[i][j] = a[i][j] + b[i][j];
-                    System.out.print(c[i][j] + " ");
+            for (int i = 0; i < rowOne; i++) {
+                for (int j = 0; j < columnOne - 1; j++) {
+                    finalMatrix[i][j] = matrixOne[i][j] + matrixTwo[i][j];
+                    System.out.print(finalMatrix[i][j] + " ");
                }
-                System.out.println(c[i][n - 1]);
+                System.out.println(finalMatrix[i][columnOne - 1]);
             }
         } else {
             System.out.println("not possible");

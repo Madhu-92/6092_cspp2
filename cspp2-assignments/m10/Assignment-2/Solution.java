@@ -2,20 +2,19 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 
 /**
- * Solution class
+ * Solution class.
  */
 public class Solution {
-	
     /**
-     * main method
+     * main method.
      *
      * @param      args  The arguments
      */
-	public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         StringList sl = new StringList();
         //Typecasting is done for StringListInterface
-        StringListInterface l = (StringListInterface)sl;
+        StringListInterface l = (StringListInterface) sl;
         // code to read the test cases input file
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
         // check if there is one more line to process
@@ -27,7 +26,7 @@ public class Solution {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                 case "add":
-	                l.add(tokens[1]);
+                    l.add(tokens[1]);
                 break;
                 case "addAll":
                 if (tokens.length == 2) {
@@ -60,7 +59,8 @@ public class Solution {
                 case "contains":
                 System.out.println(l.contains(tokens[1]));
                 break;
+                default:
             }
         }
-	}
+    }
 }

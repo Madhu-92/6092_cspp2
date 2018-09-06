@@ -193,6 +193,7 @@ public class List {
       }
     }
     return -1;
+    
   }
 
   /**
@@ -222,6 +223,10 @@ public class List {
    */
   public String toString() {
     // Replace the code below
+    if (size == 0) {
+       return "[]";
+        
+    }
     String tempStr = "[";
     for (int i = 0; i < size - 1; i++) {
       tempStr += intArray[i] + ",";

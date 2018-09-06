@@ -138,7 +138,7 @@ public class StringList implements StringListInterface{
    
     public void addAll(String[] items) {
         int j = 0;
-		for (int i = size; i < items.length; i++) {
+		for (int i = size; i < size + items.length; i++) {
             list[i] = items[j];
             j++;
         }

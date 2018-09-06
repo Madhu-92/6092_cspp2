@@ -121,13 +121,20 @@ public class StringList implements StringListInterface{
      */
     public void add(String item) {
         //Inserts the specified element at the end of the list.
-        for (int i = size; i < list.length; i++) {
-            list[i] = item;
-        }
+         if(size == list.length)
+            resize();
+        list[size++] = item;
        
     }
     /*Inserts all the elements of specified int 
     array to the end of list*/
+
+     private void resize() {
+        int rsize = size * 2;
+        list = java.util.Arrays.copyOf(list, rsize);
+        //return list;
+
+    }
    
     public void addAll(String[] items) {
         int j = 0;

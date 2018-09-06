@@ -5,6 +5,14 @@ import java.util.Scanner;
  * Solution class.
  */
 public final class Solution {
+  /**
+   * Solution Constructor.
+   */
+  private Solution() {
+    /**
+     * Empty Constructor.
+     */
+  }
     /**
      * main method.
      *

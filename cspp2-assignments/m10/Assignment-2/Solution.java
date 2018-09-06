@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  * Solution class.
  */
-public class Solution {
+public final class Solution {
     /**
      * main method.
      *

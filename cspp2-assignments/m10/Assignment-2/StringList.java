@@ -142,7 +142,7 @@ public class StringList implements StringListInterface{
             list[i] = items[j];
             j++;
         }
-        size = size + items.length;
+        //size = size + items.length;
 	}
     /*
      * The size method returns the value of the size.

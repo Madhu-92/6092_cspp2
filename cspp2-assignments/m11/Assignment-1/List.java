@@ -298,7 +298,7 @@ public class List {
     }
 
     /**
-     * Main method
+     * Main method.
      *
      * @param      args  The arguments
      */
@@ -404,3 +404,4 @@ public class List {
         }
     }
 }
+

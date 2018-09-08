@@ -79,8 +79,6 @@ class Set {
         list[size] = item;
         size++;
     }
-
-    
     /**
      * resize method.
      *
@@ -99,7 +97,7 @@ class Set {
      *
      * @param      items  The items
      */
-    public void add(final int[] items) {
+    public void addAll(final int[] items) {
         for (int i = 0; i < items.length; i++) {
             list[size] = items[i];
             size++;
@@ -185,7 +183,7 @@ public final class Solution {
                 if (intArray.length == 1) {
                     s.add(intArray[0]);
                 } else {
-                    s.add(intArray);
+                    s.addAll(intArray);
                 }
                 break;
                 // case "intersection":

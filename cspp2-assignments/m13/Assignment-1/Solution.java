@@ -13,52 +13,58 @@ class Set {
     private int[] list;
     private int size;
     
-    public Set(){
-    	list = new int[10];
-    	size = 0;
+    public Set() {
+        list = new int[10];
+        size = 0;
     }
 
     public int size() {
-    	return size;
+        return size;
     }
     public boolean contains(final int item) {
-    	for (int i = 0; i < size; i++) {
-    		if (list[i] == item) {
-    			return true;
-    		}	
-    	} return false;
+        for (int i = 0; i < size; i++) {
+            if (list[i] == item) {
+                return true;
+            }   
+        }
+        return false;
     }
     public String toString() {
-    	if (size == 0) {
+        if (size == 0) {
             return "{}";
         }
-    	String str = "{";
-    	for (int i = 0; i < size - 1; i++) {
-    		str += list[i] + ",";
-    	}
-    	str += list[size - 1] + "}";
+        String str = "{";
+        for (int i = 0; i < size - 1; i++) {
+            str += list[i] + ",";
+        }
+        str += list[size - 1] + "}";
         return str;
     }
     public void add(final int item) {
-    	for (int i = size; i < list.length; i++) {
-    		list[size] = item;
-    	}
+      // if (size == 0) {
+      //       return "{}";
+      //   }
+      //   String str = "{";
+        for (int i = size; i < list.length; i++) {
+            list[size] = item;
+        }
     }
-    public void add(final int[] item) {
-    	for (int i : item) {
-    		add(i);
-    	}
+    public void add(final int[] items) {
+        for (int i = 0; i < items.length; i++) {
+            list[size] = items[i];
+            size++;
+        }
     }
     // public void intersection(final int[] items) {
     // set s1 = new set();
-    // 	int[] newarr = new int[10];
-    // 	for (int i = 0; i < size; i++) {
-    // 		for (int j = 0; j < items.length; j++) {
-    // 		if (list[i] == items[j]) {
-    // 			newarr = list[i];
-    // 		}
-    // 	}
-    // 	}
+    //  int[] newarr = new int[10];
+    //  for (int i = 0; i < size; i++) {
+    //      for (int j = 0; j < items.length; j++) {
+    //      if (list[i] == items[j]) {
+    //          newarr = list[i];
+    //      }
+    //  }
+    //  }
     // }
 
 }

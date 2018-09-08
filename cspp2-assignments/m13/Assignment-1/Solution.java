@@ -95,7 +95,7 @@ class Set {
      * Add the items given in the int array to.
      * the Set if they are not already present.
      *
-     * @param      item  The items
+     * @param      items  The items
      */
     public void add(final int[] items) {
         for (int i = 0; i < items.length; i++) {
@@ -229,7 +229,8 @@ public final class Solution {
                 // s.add(intArray);
                 // intArray = intArray(tokens[2]);
                 // t.add(intArray);
-                // System.out.println(Arrays.deepToString(s.cartesianProduct(t)));
+                // System.out.println
+                // (Arrays.deepToString(s.cartesianProduct(t)));
                 // break;
                 default:
                 break;
@@ -237,3 +238,5 @@ public final class Solution {
         }
     }
 }
+
+

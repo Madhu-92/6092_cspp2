@@ -72,9 +72,8 @@ class Set {
      * @param      item  The item
      */
     public void add(final int item) {
-        for (int i = size; i < list.length; i++) {
-            list[size] = item;
-        }
+        list[size] = item;
+        size++;
     }
 
     /**

@@ -4,19 +4,26 @@ import java.util.Arrays;
 
 /**
  * Class for set.
- * @author :
+ * @author     :
  */
 class Set {
     //your code goes here...
     //Good luck :-)
+    /**
+    * Declaration of list.
+    */
     private int[] list;
+    /**
+    * Declaration of size.
+    */
     private int size;
-
+    /**
+     * Constructs the object.
+     */
     public Set() {
         list = new int[20];
         size = 0;
     }
-    
     /**
      * size method.
      *
@@ -84,6 +91,9 @@ class Set {
     }
     // public void intersection(final int[] items) {
     // set s1 = new set();
+    // boolean check;
+    // int f = 0;
+    // int list1 = new list
     //  int[] newarr = new int[10];
     //  for (int i = 0; i < size; i++) {
     //      for (int j = 0; j < items.length; j++) {

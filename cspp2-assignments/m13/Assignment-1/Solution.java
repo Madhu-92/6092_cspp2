@@ -29,6 +29,9 @@ class Set {
     	} return false;
     }
     public String toString() {
+    	if (size == 0) {
+            return "{}";
+        }
     	String str = "{";
     	for (int i = 0; i < size - 1; i++) {
     		str += list[i] + ",";
@@ -47,6 +50,7 @@ class Set {
     	}
     }
     // public void intersection(final int[] items) {
+    // set s1 = new set();
     // 	int[] newarr = new int[10];
     // 	for (int i = 0; i < size; i++) {
     // 		for (int j = 0; j < items.length; j++) {

@@ -64,7 +64,7 @@ class Set {
         }
         String str = "{";
         for (int i = 0; i < size - 1; i++) {
-            str += list[i] + ",";
+            str += list[i] + ", ";
         }
         str += list[size - 1] + "}";
         return str;
@@ -95,11 +95,11 @@ class Set {
      * Add the items given in the int array to.
      * the Set if they are not already present.
      *
-     * @param      items  The items
+     * @param      item  The items
      */
-    public void addAll(final int[] items) {
-        for (int i = 0; i < items.length; i++) {
-            list[size] = items[i];
+    public void add(final int[] item) {
+        for (int i = 0; i < item.length; i++) {
+            list[size] = item[i];
             size++;
             if (size > list.length / 2) {
                 list = resize();
@@ -183,7 +183,7 @@ public final class Solution {
                 if (intArray.length == 1) {
                     s.add(intArray[0]);
                 } else {
-                    s.addAll(intArray);
+                    s.add(intArray);
                 }
                 break;
                 // case "intersection":

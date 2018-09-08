@@ -20,12 +20,12 @@ class Set {
     /**
      * assigning value.
      */
-    private static final int TWENTY = 20;
+    private static final int TEN = 10;
     /**
      * Constructs the object.
      */
     Set() {
-        list = new int[TWENTY];
+        list = new int[TEN];
         size = 0;
     }
     /**
@@ -80,8 +80,11 @@ class Set {
         size++;
     }
 
+    
     /**
      * resize method.
+     *
+     * @return     list2
      */
     public int[] resize() {
         int[] list2 = new int[size * 2];

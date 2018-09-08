@@ -79,18 +79,18 @@ class Set {
         list[size] = item;
         size++;
     }
-    // /**
-    //  * resize method.
-    //  *
-    //  * @return     list2
-    //  */
-    // public int[] resize() {
-    //     int[] list2 = new int[size * 2];
-    //     for (int i = 0; i < size; i++) {
-    //         list2[i] = list[i];
-    //     }
-    //     return list2;
-    // }
+    /**
+     * resize method.
+     *
+     * @return     list2
+     */
+    public int[] resize() {
+        int[] list2 = new int[size * 2];
+        for (int i = 0; i < size; i++) {
+            list2[i] = list[i];
+        }
+        return list2;
+    }
     /**
      * Add the items given in the int array to.
      * the Set if they are not already present.
@@ -100,27 +100,47 @@ class Set {
     public void add(final int[] items) {
         for (int i = 0; i < items.length; i++) {
             list[size++] = items[i];
-            //size++;
-            // if (size > list.length / 2) {
-            //     list = resize();
-            // }
+            size++;
+            if (size > list.length / 2) {
+                list = resize();
+            }
         }
     }
-    // public void intersection(final int[] items) {
-    // set s1 = new set();
-    // boolean check;
-    // int f = 0;
-    // int list1 = new list
-    //  int[] newarr = new int[10];
-    //  for (int i = 0; i < size; i++) {
-    //      for (int j = 0; j < items.length; j++) {
-    //      if (list[i] == items[j]) {
-    //          newarr = list[i];
-    //      }
-    //  }
-    //  }
-    // }
 
+//     /**
+//      * intersection method.
+//      *
+//      * @param      items  The items
+//      */
+//     public void intersection(final int[] items) {
+//     // set s1 = new set();
+//     // boolean check;
+//      // int f = 0;
+//      // int list1 = new list
+//      int[] newarr = new int[10];
+//      for (int i = 0; i < size; i++) {
+//          for (int j = 0; j < items.length; j++) {
+//          if (list[i] == items[j]) {
+//             System.out.println(i);
+//          }
+//      }
+//      }
+//     }
+
+//     /**
+//      * retain all method.
+//      *
+//      * @param      items  The items
+//      */
+//     public retainAll(final int[] items) {
+//       for (int i = 0; i < size; i++) {
+//       for (int j = 0; j < items.length; j++) {
+//          if (list[i] == items[j]) {
+//             return items[j];
+//          }
+//      }
+//      }
+//      }
 }
 /**
  * Solution class for code-eval.

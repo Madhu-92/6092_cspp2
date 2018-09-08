@@ -20,12 +20,12 @@ class Set {
     /**
      * assigning value.
      */
-    private static final int twenty = 20;
+    private static final int TWENTY = 20;
     /**
      * Constructs the object.
      */
     Set() {
-        list = new int[twenty];
+        list = new int[TWENTY];
         size = 0;
     }
     /**
@@ -81,6 +81,16 @@ class Set {
     }
 
     /**
+     * resize method.
+     */
+    public int[] resize() {
+        int[] list2 = new int[size * 2];
+        for (int i = 0; i < size; i++) {
+            list2[i] = list[i];
+        }
+        return list2;
+    }
+    /**
      * Add the items given in the int array to.
      * the Set if they are not already present.
      *
@@ -90,6 +100,9 @@ class Set {
         for (int i = 0; i < items.length; i++) {
             list[size] = items[i];
             size++;
+            if (size > list.length / 2) {
+                list = resize();
+            }
         }
     }
     // public void intersection(final int[] items) {

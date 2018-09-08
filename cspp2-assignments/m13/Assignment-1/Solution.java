@@ -79,31 +79,31 @@ class Set {
         list[size] = item;
         size++;
     }
-    /**
-     * resize method.
-     *
-     * @return     list2
-     */
-    public int[] resize() {
-        int[] list2 = new int[size * 2];
-        for (int i = 0; i < size; i++) {
-            list2[i] = list[i];
-        }
-        return list2;
-    }
+    // /**
+    //  * resize method.
+    //  *
+    //  * @return     list2
+    //  */
+    // public int[] resize() {
+    //     int[] list2 = new int[size * 2];
+    //     for (int i = 0; i < size; i++) {
+    //         list2[i] = list[i];
+    //     }
+    //     return list2;
+    // }
     /**
      * Add the items given in the int array to.
      * the Set if they are not already present.
      *
      * @param      item  The items
      */
-    public void add(final int[] item) {
-        for (int i = 0; i < item.length; i++) {
-            list[size] = item[i];
-            size++;
-            if (size > list.length / 2) {
-                list = resize();
-            }
+    public void add(final int[] items) {
+        for (int i = 0; i < items.length; i++) {
+            list[size++] = items[i];
+            //size++;
+            // if (size > list.length / 2) {
+            //     list = resize();
+            // }
         }
     }
     // public void intersection(final int[] items) {

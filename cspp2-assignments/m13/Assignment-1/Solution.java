@@ -4,15 +4,14 @@ import java.util.Arrays;
 
 /**
  * Class for set.
- * @author : 
+ * @author :
  */
 class Set {
     //your code goes here...
     //Good luck :-)
-    
     private int[] list;
     private int size;
-    
+
     public Set() {
         list = new int[10];
         size = 0;
@@ -25,7 +24,7 @@ class Set {
         for (int i = 0; i < size; i++) {
             if (list[i] == item) {
                 return true;
-            }   
+            }
         }
         return false;
     }
@@ -41,13 +40,16 @@ class Set {
         return str;
     }
     public void add(final int item) {
-      // if (size == 0) {
-      //       return "{}";
-      //   }
-      //   String str = "{";
+      if ( size== 0) {
+            System.out.println("{}");
+        }
+        String str = "{";
         for (int i = size; i < list.length; i++) {
             list[size] = item;
+            str += list[size] + ",";
         }
+        str += list[size - 1] + "}";
+        System.out.println(str);
     }
     public void add(final int[] items) {
         for (int i = 0; i < items.length; i++) {

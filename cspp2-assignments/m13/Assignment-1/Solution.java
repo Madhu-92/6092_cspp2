@@ -13,13 +13,26 @@ class Set {
     private int size;
 
     public Set() {
-        list = new int[10];
+        list = new int[20];
         size = 0;
     }
-
+    
+    /**
+     * size method.
+     *
+     * @return     size
+     */
     public int size() {
         return size;
     }
+
+    /**
+     * contains method.
+     *
+     * @param      item  The item
+     *
+     * @return     true or false
+     */
     public boolean contains(final int item) {
         for (int i = 0; i < size; i++) {
             if (list[i] == item) {
@@ -28,6 +41,12 @@ class Set {
         }
         return false;
     }
+
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         if (size == 0) {
             return "{}";
@@ -39,18 +58,24 @@ class Set {
         str += list[size - 1] + "}";
         return str;
     }
+
+    /**
+     * Add the given integer to the Set if it is not already present.
+     *
+     * @param      item  The item
+     */
     public void add(final int item) {
-      if ( size== 0) {
-            System.out.println("{}");
-        }
-        String str = "{";
         for (int i = size; i < list.length; i++) {
             list[size] = item;
-            str += list[size] + ",";
         }
-        str += list[size - 1] + "}";
-        System.out.println(str);
     }
+
+    /**
+     * Add the items given in the int array to.
+     * the Set if they are not already present.
+     *
+     * @param      items  The items
+     */
     public void add(final int[] items) {
         for (int i = 0; i < items.length; i++) {
             list[size] = items[i];

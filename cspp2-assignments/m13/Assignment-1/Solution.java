@@ -18,10 +18,14 @@ class Set {
     */
     private int size;
     /**
+     * assigning value.
+     */
+    private static final int twenty = 20;
+    /**
      * Constructs the object.
      */
-    public Set() {
-        list = new int[20];
+    Set() {
+        list = new int[twenty];
         size = 0;
     }
     /**

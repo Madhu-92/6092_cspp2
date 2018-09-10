@@ -17,12 +17,12 @@ class SortedSet extends Set {
   /**
    * variable with value 10.
    */
-  private final int TEN = 10;
+  private final int ten = 10;
   /**
    * Constructor for the object "Sortedset".
    */
   SortedSet() {
-    set = new int[TEN];
+    set = new int[ten];
     size = 0;
   }
   /**
@@ -31,7 +31,7 @@ class SortedSet extends Set {
    * @param  items int array for the constructor.
    */
   SortedSet(final int[] items) {
-    set = new int[TEN];
+    set = new int[ten];
     size = 0;
     addAll(items);
   }
@@ -88,7 +88,7 @@ class SortedSet extends Set {
     Arrays.sort(set);
   }
   /**
-   * method to add the given element into set.
+   * method for adding the given element into set.
    *
    * @param  element variable to be inserted into set.
    */
@@ -101,7 +101,7 @@ class SortedSet extends Set {
     }
   }
   /**
-   * method to resize the size of set.
+   * method for resizing the size of set.
    */
   public void resize() {
     int resizefactor = 2;
@@ -130,7 +130,7 @@ class SortedSet extends Set {
    * @return returns the subset of the set.
    */
   public int[] subSet(final int fromElement, final  int toElement) {
-    int[] resultSet = new int[TEN];
+    int[] resultSet = new int[ten];
     int subsetSize = 0;
     for (int i = 0; i < size; i++) {
       if (set[i] >= fromElement && set[i] < toElement) {
@@ -149,7 +149,7 @@ class SortedSet extends Set {
    * less than the given value in the set.
    */
   public int[] headSet(final int toElement) {
-    int[] resultSet = new int[TEN];
+    int[] resultSet = new int[ten];
     int subsetSize = 0;
     for (int i = 0; i < size; i++) {
       if (set[i] < toElement) {

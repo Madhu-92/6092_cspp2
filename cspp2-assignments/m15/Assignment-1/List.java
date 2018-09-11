@@ -305,6 +305,16 @@ public class List {
         size = 0;
     }
 
+    public int count(final int item) {
+        int count = 0;
+        for (int i = 0; i < size; i++) {
+            if (list[i] == item) {
+                count += 1;
+            }
+        }
+        return count;
+    }
+
     /**
      * Main method.
      *

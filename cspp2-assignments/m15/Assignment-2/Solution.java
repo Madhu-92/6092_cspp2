@@ -35,9 +35,9 @@ class SortedSet {
         size = 0;
     }
     /**
-     * { function_description }.
+     * size method.
      *
-     * @return     { description_of_the_return_value }
+     * @return     size
      */
     public int size() {
         return size;
@@ -60,14 +60,14 @@ class SortedSet {
         return str;
     }
     /**
-     * { function_description }.
+     * resize method.
      */
     public void resize() {
         // System.out.println(size);
         sortedset = Arrays.copyOf(sortedset, 2 * size);
     }
     /**
-     * { function_description }.
+     * add method.
      *
      * @param      item  The item
      */
@@ -77,18 +77,16 @@ class SortedSet {
         }
         if (!contains(item)) {
             sortedset[size++] = item;
-            // System.out.println(Arrays.toString(sortedset));
         }
         sortedset = Arrays.copyOf(sortedset, size);
         Arrays.sort(sortedset);
-        // System.out.println("fs" + Arrays.toString(sortedset));
     }
     /**
      * returns a set after removing the element.
      *
      * @param      index      The index
      *
-     * @throws     Exception  { exception_description }
+     * @throws     Exception  Invalid Position Exception
      */
     public void remove(final int index) throws Exception {
         if (index >= size || index < 0) {
@@ -113,11 +111,11 @@ class SortedSet {
         }
     }
     /**
-     * { function_description }.
+     * boolean method.
      *
      * @param      item  The item
      *
-     * @return     { description_of_the_return_value }
+     * @return     return either true or false.
      */
     public boolean contains(final int item) {
         for (int i = 0; i < size; i++) {
@@ -132,7 +130,7 @@ class SortedSet {
      *
      * @param      that  The that
      *
-     * @return     { description_of_the_return_value }
+     * @return     returns a set
      */
     public SortedSet intersection(final SortedSet that) {
         if (that.size() == 0 || this.size() == 0) {
@@ -153,7 +151,7 @@ class SortedSet {
      *
      * @param      items  The items
      *
-     * @return     { description_of_the_return_value }
+     * @return     a set
      */
     public SortedSet retainAll(final int[] items) {
             SortedSet newsortedset = new SortedSet();
@@ -165,7 +163,7 @@ class SortedSet {
      *
      * @param      that  The that
      *
-     * @return     { description_of_the_return_value }
+     * @return     an array
      */
     public int[][] cartesianProduct(final SortedSet that) {
         int[][] array = new int[this.size() * that.size()][2];
@@ -187,9 +185,9 @@ class SortedSet {
      * @param      fromElement  The from element.
      * @param      toElement    To element
      *
-     * @return     { description_of_the_return_value }
+     * @return     set
      *
-     * @throws     Exception    { exception_description }
+     * @throws     Exception    exception
      */
     public SortedSet subSet(final int fromElement,
                             final int toElement) throws Exception {
@@ -212,9 +210,9 @@ class SortedSet {
      *
      * @param      toElement  To element.
      *
-     * @return     { description_of_the_return_value }
+     * @return     set
      *
-     * @throws     Exception  { exception_description }
+     * @throws     Exception  exception
      */
     public SortedSet headSet(final int toElement) throws Exception {
         SortedSet set = new SortedSet();
@@ -234,7 +232,7 @@ class SortedSet {
      *
      * @return     returns the last element in the set.
      *
-     * @throws     Exception  { exception_description }
+     * @throws     Exception  exception
      */
     public int last() throws Exception {
         if (size == 0) {
@@ -256,9 +254,9 @@ public final class Solution {
     /**
      * helper function to convert string input to int array.
      *
-     * @param      s     { string input from test case file }
+     * @param      s     string input
      *
-     * @return     { int array from the given string }
+     * @return     int array from the given string
      */
     public static int[] intArray(final String s) {
         String input = s;

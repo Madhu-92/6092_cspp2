@@ -304,7 +304,6 @@ public class List {
         list = new int[num];
         size = 0;
     }
-    
     /**
      * count method counts the number of occurences of a number.
      *

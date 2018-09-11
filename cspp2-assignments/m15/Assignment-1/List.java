@@ -355,7 +355,7 @@ public class List {
                 try {
                 if (tokens.length == 2) {
                         l.remove(Integer.parseInt(tokens[1]));
-                    } 
+                    }
                 } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }
@@ -411,7 +411,7 @@ public class List {
                         System.out.println(object);
                     }
                 } catch (Exception e) {
-                    System.out.println("Index Out of Bound Exceptions");
+                    System.out.println(e.getMessage());
                 }
                 break;
 

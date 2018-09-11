@@ -115,6 +115,7 @@ public class List {
      * [1,3,0,0,0,0,0,0,0,0] The method returns void (nothing)
      *
      * @param      index  The index
+     * @throws     Exception  throws Invalid Position Exception
      */
     public void remove(final int index) throws Exception {
         if (index >= 0 && index < size) {
@@ -235,6 +236,7 @@ public class List {
     * Removes all of its elements that are contained in the specified int array.
     *
     * @param      newArray  The new array
+    * @throws     Exception
     */
     public void removeAll(final int[] newArray) throws Exception {
         for (int i = 0; i < newArray.length; i++) {
@@ -257,6 +259,8 @@ public class List {
     @param      end    The end
 
     @return  object
+
+    @throws     Exception  Index Out of Bounds Exception
     */
     public List subList(final int start, final int end) throws Exception {
 
@@ -353,12 +357,12 @@ public class List {
                 break;
             case "remove":
                 try {
-                if (tokens.length == 2) {
+                    if (tokens.length == 2) {
                         l.remove(Integer.parseInt(tokens[1]));
                     }
                 } catch (Exception e) {
-                        System.out.println(e.getMessage());
-                    }
+                    System.out.println(e.getMessage());
+                }
                 break;
             case "indexOf":
                 if (tokens.length == 2) {
@@ -390,16 +394,15 @@ public class List {
                 break;
             case "removeAll":
                 try {
-                if (tokens.length == 2) {
-                    String[] t2 = tokens[1].split(",");
-                    int[] a = new int[t2.length];
-                    for (int i = 0; i < t2.length; i++) {
-                        a[i] = Integer.parseInt(t2[i]);
+                    if (tokens.length == 2) {
+                        String[] t2 = tokens[1].split(",");
+                        int[] a = new int[t2.length];
+                        for (int i = 0; i < t2.length; i++) {
+                            a[i] = Integer.parseInt(t2[i]);
+                        }
+                        l.removeAll(a);
                     }
-                    l.removeAll(a);
-                }
-                }
-                catch(Exception e) {
+                } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
                 break;

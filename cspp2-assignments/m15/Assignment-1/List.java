@@ -117,17 +117,13 @@ public class List {
      * @param      index  The index
      */
     public void remove(final int index) {
-        try {
-            if (index >= 0 && index < size) {
-                for (int i = index; i < size; i++) {
-                    list[i] = list[i + 1];
-                }
-                size--;
-            } else {
-                System.out.println("Invalid Position Exception");
+        if (index >= 0 && index < size) {
+            for (int i = index; i < size; i++) {
+                list[i] = list[i + 1];
             }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+            size--;
+        } else {
+            System.out.println("Invalid Position Exception");
         }
     }
 
@@ -263,6 +259,7 @@ public class List {
     @return  object
     */
     public List subList(final int start, final int end) {
+
         List k = new List();
         if (start < 0 || end <= 0 || start > end
                 || start > size || end > size) {
@@ -356,7 +353,11 @@ public class List {
                 break;
             case "remove":
                 if (tokens.length == 2) {
-                    l.remove(Integer.parseInt(tokens[1]));
+                    try {
+                        l.remove(Integer.parseInt(tokens[1]));
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                    }
                 }
                 break;
             case "indexOf":

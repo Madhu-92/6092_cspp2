@@ -236,7 +236,7 @@ public class List {
     * Removes all of its elements that are contained in the specified int array.
     *
     * @param      newArray  The new array
-    * @throws     Exception
+    * @throws     Exception throws exception
     */
     public void removeAll(final int[] newArray) throws Exception {
         for (int i = 0; i < newArray.length; i++) {

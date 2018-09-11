@@ -116,14 +116,14 @@ public class List {
      *
      * @param      index  The index
      */
-    public void remove(final int index) {
+    public void remove(final int index) throws Exception {
         if (index >= 0 && index < size) {
             for (int i = index; i < size; i++) {
                 list[i] = list[i + 1];
             }
             size--;
         } else {
-            System.out.println("Invalid Position Exception");
+            throw new Exception("Invalid Position Exception");
         }
     }
 
@@ -236,7 +236,7 @@ public class List {
     *
     * @param      newArray  The new array
     */
-    public void removeAll(final int[] newArray) {
+    public void removeAll(final int[] newArray) throws Exception {
         for (int i = 0; i < newArray.length; i++) {
             for (int j = 0; j < size; j++) {
                 if (newArray[i] == list[j]) {
@@ -258,20 +258,20 @@ public class List {
 
     @return  object
     */
-    public List subList(final int start, final int end) {
+    public List subList(final int start, final int end) throws Exception {
 
-        List k = new List();
+        List subList = new List();
         if (start < 0 || end <= 0 || start > end
                 || start > size || end > size) {
-            System.out.println("Index Out of Bounds Exception");
-            return null;
+            throw new Exception("Index Out of Bounds Exception");
+            // return null;
 
         } else {
             for (int i = start; i < end; i++) {
-                k.add(list[i]);
+                subList.add(list[i]);
             }
         }
-        return k;
+        return subList;
     }
     /**
     Returns a boolean indicating whether the parameter i.e a List object is.
@@ -389,6 +389,7 @@ public class List {
                 }
                 break;
             case "removeAll":
+                try {
                 if (tokens.length == 2) {
                     String[] t2 = tokens[1].split(",");
                     int[] a = new int[t2.length];
@@ -396,6 +397,10 @@ public class List {
                         a[i] = Integer.parseInt(t2[i]);
                     }
                     l.removeAll(a);
+                }
+                }
+                catch(Exception e) {
+                    System.out.println(e.getMessage());
                 }
                 break;
             case "subList":

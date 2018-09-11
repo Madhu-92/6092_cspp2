@@ -416,6 +416,12 @@ public class List {
             case "clear":
                 l.clear();
                 break;
+            case "count":
+                if (tokens.length == 2) {
+                    System.out.println(l.count(
+                                           Integer.parseInt(tokens[1])));
+                }
+                break;    
             default:
                 break;
             }

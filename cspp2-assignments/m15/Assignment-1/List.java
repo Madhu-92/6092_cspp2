@@ -304,7 +304,14 @@ public class List {
         list = new int[num];
         size = 0;
     }
-
+    
+    /**
+     * count method counts the number of occurences of a number.
+     *
+     * @param      item  The item
+     *
+     * @return     the count.
+     */
     public int count(final int item) {
         int count = 0;
         for (int i = 0; i < size; i++) {
@@ -421,7 +428,7 @@ public class List {
                     System.out.println(l.count(
                                            Integer.parseInt(tokens[1])));
                 }
-                break;    
+                break;
             default:
                 break;
             }

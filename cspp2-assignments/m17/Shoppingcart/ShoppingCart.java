@@ -22,11 +22,13 @@ class ShoppingCart {
 	}
 
 	public void addToCart(Item item) {
-		for (int i = 0; i < catalogue.size(); i++) {
-			if (catalogue.get(i).getProductName().equals(item.getProductName())) {
-				cart.add(item);
-				catalogue.get(i).decreaseQuantity(item.getQuantity());
-				return;
+		for(int i=0; i < catalogue.size(); i++) {
+			if(catalogue.get(i).getProductName().equals(item.getProductName())) {
+				if(catalogue.get(i).getQuantity() >= item.getQuantity()) {
+					cart.add(item);
+					catalogue.get(i).decreaseQuantity(item.getQuantity());
+					return;
+				}
 			}
 		}
 	}
@@ -110,6 +112,6 @@ class ShoppingCart {
 		System.out.println("Total:"+getTotalAmount());
 		System.out.println("Disc%:"+(getTotalAmount()-getDiscount()));
 		System.out.println("Tax:"+getTax());
-		System.out.println("Payable Amount: "+getPayableAmount());
+		System.out.println("Payable Amount: " + getPayableAmount());
 	}
 }

@@ -32,10 +32,14 @@ class ShoppingCart {
 	}
 
 	public void removeFromCart(Item item) {
-		for (int i = 0; i < cart.size(); i++) {
-			if (cart.get(i).getProductName().equals(item.getProductName())) {
-				cart.remove(i);
-				cart.get(i).decreaseQuantity(item.getQuantity());
+		for(int i = 0; i < cart.size(); i++){
+			if(cart.get(i).getProductName().equals(item.getProductName())) {
+				if( cart.get(i).getQuantity() == item.getQuantity()) {
+					cart.remove(i);
+				}
+				else {
+					cart.get(i).decreaseQuantity(item.getQuantity());
+				}
 			}
 		}
 	}

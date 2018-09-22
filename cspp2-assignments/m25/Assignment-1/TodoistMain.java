@@ -119,7 +119,7 @@ public class TodoistMain {
  		if (timeToComplete < 0) {
  			throw new Exception("Invalid timeToComplete "+timeToComplete);
  		}
- 		if (status.equals("todo") || status.equals("done")) {
+ 		if (!status.equals("todo") || !status.equals("done")) {
  			throw new Exception("Invalid status "+status);
  		}
  		this.taskTitle = taskTitle;

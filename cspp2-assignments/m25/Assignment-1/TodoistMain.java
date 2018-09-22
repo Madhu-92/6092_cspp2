@@ -163,10 +163,13 @@ public class TodoistMain {
  		taskObjects[size++] = task;
  	}
  	public String toString() {
- 		// String str = "";
- 		// str = this.taskTitle+", "+assignedTo+", "+timeToComplete+" ,"+
- 		//       important+", "+urgent+", "+status;
- 		// return str;
- 		return taskObjects[size++].toString();
+ 		String str = "";
+ 		for (int i = 0; i < size; i++) {
+ 			str = taskObjects[i].getAssignedTo()+", "+taskObjects[i].getImportant()+" ,"+
+ 		      taskObjects[i].getUrgent()+", "+taskObjects[i].getStatus();
+ 		}
+ 		
+ 		return str;
+ 		// return taskObjects[size++].toString();
  	}
  }

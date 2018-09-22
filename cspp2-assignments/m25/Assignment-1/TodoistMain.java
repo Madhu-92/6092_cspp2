@@ -153,7 +153,7 @@ public class TodoistMain {
  	Task[] taskObjects;
  	int size;
  	Todoist(){
- 		taskObjects = new Task[10];
+ 		taskObjects = new Task[20];
  		size = 0;
  	}
 

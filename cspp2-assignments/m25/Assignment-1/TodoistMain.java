@@ -26,7 +26,7 @@ public class TodoistMain {
                 //     testAddTask(todo, tokens);
                 // break;
                 case "print-todoist":
-                    System.out.println(todo.toString());
+                    System.out.println(todo);
                 break;
                 // case "get-next":
                 //     System.out.println(todo.getNextTask(tokens[1]));
@@ -129,6 +129,7 @@ public class TodoistMain {
  		this.urgent = urgent;
  		this.status = status;
  	}
+ 	Task() { }
  	public String getAssignedTo(){
  		return assignedTo;
  	}

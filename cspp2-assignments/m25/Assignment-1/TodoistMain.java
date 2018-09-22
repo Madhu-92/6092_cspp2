@@ -113,6 +113,12 @@ public class TodoistMain {
 
  	Task(String taskTitle,String assignedTo, int timeToComplete,
  	     boolean important, boolean urgent, String status) throws Exception {
+ 		this.taskTitle = taskTitle;
+ 		this.assignedTo = assignedTo;
+ 		this.timeToComplete = timeToComplete;
+ 		this.important = important;
+ 		this.urgent = urgent;
+ 		this.status = status;
  		if (taskTitle.length() == 0) { 
  			throw new Exception("Title not provided");
  		}
@@ -122,12 +128,7 @@ public class TodoistMain {
  		if (!status.equals("todo") || !status.equals("done")) {
  			throw new Exception("Invalid status "+status);
  		}
- 		this.taskTitle = taskTitle;
- 		this.assignedTo = assignedTo;
- 		this.timeToComplete = timeToComplete;
- 		this.important = important;
- 		this.urgent = urgent;
- 		this.status = status;
+ 		
  	}
  	Task() { }
  	public String getAssignedTo(){

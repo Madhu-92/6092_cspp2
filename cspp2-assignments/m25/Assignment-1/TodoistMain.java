@@ -143,8 +143,8 @@ public class TodoistMain {
  	}
  	public String toString() {
  		String str = "";
- 		str = taskTitle+", "+assignedTo+", "+timeToComplete+" ,"+
- 		      important+", "+urgent+", "+status;
+ 		str = this.taskTitle+", "+this.assignedTo+", "+this.timeToComplete+" ,"+
+ 		      this.important+", "+this.urgent+", "+this.status;
  		return str;
  	}
  }

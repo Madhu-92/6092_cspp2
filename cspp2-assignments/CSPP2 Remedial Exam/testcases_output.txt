@@ -260,9 +260,6 @@ manasa 4
 swathi 5
 alekhya 6
 kumar 7
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 7
-	at Hotel.printReservations(Hotel.java:43)
-	at Solution.main(Solution.java:49)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -334,8 +331,5 @@ karthik 7
 manohar 8
 swetha 9
 reddy 10
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
-	at Hotel.printReservations(Hotel.java:43)
-	at Solution.main(Solution.java:49)
 ----------------------------------------
 

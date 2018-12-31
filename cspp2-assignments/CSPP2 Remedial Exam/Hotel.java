@@ -39,9 +39,9 @@ public class Hotel {
 	}
 
 	public void printReservations() {
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < rooms.length; i++) {
 			if (rooms[i] != null) {
-				System.out.println(rooms[i].getName() + " " + rooms[i].getRoom());
+				System.out.println(rooms[i]);
 			}
 		}
 	}

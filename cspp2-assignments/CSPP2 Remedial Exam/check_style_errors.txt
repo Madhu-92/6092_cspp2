@@ -21,7 +21,6 @@ Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Hotel.java:26:51: Parameter roomNum should be final. [FinalParameters]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Hotel.java:41:9: Class 'Hotel' looks like designed for extension (can be subclassed), but the method 'printReservations' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Hotel' final or making the method 'printReservations' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Hotel.java:41:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Hotel.java:44: Line is longer than 80 characters (found 98). [LineLength]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Hotel.java:49:9: Class 'Hotel' looks like designed for extension (can be subclassed), but the method 'cancelReservations' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Hotel' final or making the method 'cancelReservations' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Hotel.java:49:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Hotel.java:49:40: Parameter person should be final. [FinalParameters]
@@ -29,7 +28,7 @@ Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Hotel.java:58:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Hotel.java:58:35: Parameter num should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Reservation.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Reservation.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]

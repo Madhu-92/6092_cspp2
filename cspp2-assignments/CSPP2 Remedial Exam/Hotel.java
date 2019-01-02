@@ -1,45 +1,51 @@
 public class Hotel {
 	Reservation[] rooms;
 	int size;
-	int rNum = 1;
+	// int rNum = 1;
 	Reservation reserveObj;
 	Hotel() {
-		rooms = new Reservation[5];
-		size = 0;
+		rooms = new Reservation[6];
+		size = 1;
 	}
 	public int reserveRoom(String person) {
+		int i;
 		if (size == rooms.length) {
 			System.out.println("All Rooms are reserved");
+			return -1;
 		}
-		for (int i = 0; i < rooms.length; i++) {
+		for (i = 1; i < rooms.length; i++) {
 			if (rooms[i] == null) {
-				reserveObj = new Reservation(person);
-				reserveObj.setRoom(i + 1);
-				rooms[i] = reserveObj;
+				rooms[i] = new Reservation(person, i);
+				// reserveObj.setRoom(i);
+				// rooms[i] = reserveObj;
 				size++;
-				return i + 1;
+				break;
+				
 			}
 		}
-		return -1;
+		
+		return i;
 	}
 
 	public boolean reserveRoom(String person, int roomNum) {
 		if (size == rooms.length) {
 			System.out.println("All Rooms are reserved");
-		} else if (rooms[roomNum - 1] == null) {
-			reserveObj = new Reservation(person, roomNum);
-			rooms[roomNum  - 1] = reserveObj;
-			rNum++;
+			return false;
+		} if (rooms[roomNum] != null) {
+			System.out.println("Room is already reserved");
+		} if(rooms[roomNum] == null) {
+			rooms[roomNum] = new Reservation(person, roomNum);
+			// rooms[roomNum] = reserveObj;
+			// rNum++;
 			size++;
 			return true;
-		} else if (rooms[roomNum - 1] != null) {
-			System.out.println("Room is already reserved");
 		}
 		return false;
+
 	}
 
 	public void printReservations() {
-		for (int i = 0; i < rooms.length; i++) {
+		for (int i = 1; i < rooms.length; i++) {
 			if (rooms[i] != null) {
 				System.out.println(rooms[i]);
 			}
@@ -47,10 +53,11 @@ public class Hotel {
 	}
 
 	public void cancelReservations(String person) {
-		for (int i = 0; i < size; i++) {
+		for (int i = 1; i < size; i++) {
 			if (rooms[i] != null) {
 				if (rooms[i].getName().equals(person)) {
 					rooms[i] = null;
+					size--;
 				}
 			}
 		}

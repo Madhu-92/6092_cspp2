@@ -11,4 +11,5 @@ public class Participant {
 	public void setNum(int num) {
 		this.num = num;
 	}
+	
 }

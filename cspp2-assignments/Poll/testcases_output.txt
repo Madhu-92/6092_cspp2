@@ -4,8 +4,8 @@ Highest number of votes for question : Who should be the next Prime Minister? : 
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Quiz.addQuestion(Quiz.java:16)
-	at Solution.main(Solution.java:15)
+	at Question.setOptionVotes(Question.java:38)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -16,8 +16,8 @@ Highest number of votes for question : Who will be the next cm for AP? : CBN
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Quiz.addQuestion(Quiz.java:16)
-	at Solution.main(Solution.java:15)
+	at Question.setOptionVotes(Question.java:38)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -28,7 +28,7 @@ Highest number of votes for question : Who will be the next cm for AP? : CBN
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Quiz.addQuestion(Quiz.java:16)
-	at Solution.main(Solution.java:15)
+	at Question.setOptionVotes(Question.java:38)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 

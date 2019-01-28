@@ -6,7 +6,6 @@ Thank you
 
 Your Output: 
 Insufficient funds
-Negative amount
 0
 Thank you
 ----------------------------------------
@@ -19,6 +18,7 @@ Negative amount
 Thank you
 
 Your Output: 
+Negative amount
 2000
 Thank you
 ----------------------------------------

@@ -30,7 +30,7 @@ public class User {
 		int x = 0;
 		for (int i = 0; i < size; i++) {
 			if (wallet[i].getName().equals(name)) {
-				if (wallet[i].getAmount() < 0) {
+				if (amount < 0) {
 					System.out.println("Negative amount");
 				}
 				x = wallet[i].getAmount() + amount;

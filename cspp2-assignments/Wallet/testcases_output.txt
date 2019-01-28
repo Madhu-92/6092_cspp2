@@ -19,6 +19,7 @@ Thank you
 
 Your Output: 
 Negative amount
+Negative amount
 2000
 Thank you
 ----------------------------------------

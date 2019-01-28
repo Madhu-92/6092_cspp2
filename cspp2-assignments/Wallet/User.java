@@ -46,7 +46,7 @@ public class User {
 				if (wallet[i].getAmount() < amount) {
 					System.out.println("Insufficient funds");
 				}
-				if (wallet[i].getAmount() < 0) {
+				if (amount < 0) {
 					System.out.println("Negative amount");
 				}
 

@@ -5,9 +5,10 @@ Insufficient funds
 Thank you
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Wallet.getAmount()I
-	at User.debit(User.java:46)
-	at Solution.main(Solution.java:38)
+Insufficient funds
+Negative amount
+0
+Thank you
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -18,9 +19,8 @@ Negative amount
 Thank you
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Wallet.getAmount()I
-	at User.debit(User.java:46)
-	at Solution.main(Solution.java:38)
+2000
+Thank you
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -31,9 +31,10 @@ Expected Output:
 Thank you
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Wallet.getAmount()I
-	at User.credit(User.java:33)
-	at Solution.main(Solution.java:31)
+6000
+21000
+19000
+Thank you
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -45,9 +46,11 @@ Insufficient funds
 Thank you
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Wallet.getAmount()I
-	at User.debit(User.java:46)
-	at Solution.main(Solution.java:38)
+0
+0
+0
+Insufficient funds
+Thank you
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -60,8 +63,11 @@ Expected Output:
 Thank you
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Wallet.getAmount()I
-	at User.credit(User.java:33)
-	at Solution.main(Solution.java:31)
+3000
+26000
+23000
+6000
+21000
+Thank you
 ----------------------------------------
 

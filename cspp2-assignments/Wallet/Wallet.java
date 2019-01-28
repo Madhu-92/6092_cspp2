@@ -1,6 +1,6 @@
 public class Wallet {
 	String name;
-	int amount = 1000;
+	float amount = 1000;
 	// User[] user;
 	Wallet() {
 		this.amount = 1000;
@@ -11,20 +11,20 @@ public class Wallet {
 	public String getName() {
 		return this.name;
 	}
-	public int getAmount() {
+	public float getAmount() {
 		return this.amount;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public void setAmount(int amount) {
+	public void setAmount(float amount) {
 		this.amount = amount;
 	}
 	public String toString() {
 		return this.name+" "+this.amount;
 	}
 
-	// public void credit(String name, int amount) {
+	// public void credit(String name, float amount) {
 
 	// }
 	// public void debit(String name, int amount) {

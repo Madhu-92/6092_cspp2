@@ -48,6 +48,8 @@ Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:64:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:64:29: Parameter name should be final. [FinalParameters]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:64:36: 'name' hides a field. [HiddenField]
+[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:67: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:67:59: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:72:9: Class 'User' looks like designed for extension (can be subclassed), but the method 'transfer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'User' final or making the method 'transfer' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:72:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:72:30: Parameter user1 should be final. [FinalParameters]
@@ -55,7 +57,7 @@ Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:72:58: Parameter amount should be final. [FinalParameters]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:77: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 40 errors.
+Checkstyle ends with 42 errors.
 Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\Wallet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\Wallet.java:1: Missing a Javadoc comment. [JavadocType]

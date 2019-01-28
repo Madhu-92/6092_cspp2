@@ -64,7 +64,7 @@ public class User {
 	public void balance(String name) {
 		for (int i = 0; i < size; i++) {
 			if (wallet[i].getName().equals(name)) {
-				System.out.println(wallet[i].getAmount());
+				System.out.println((float)wallet[i].getAmount());
 				break;
 			}
 		}

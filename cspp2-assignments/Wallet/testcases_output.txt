@@ -8,7 +8,6 @@ Your Output:
 Insufficient funds
 Negative amount
 0
-0
 Thank you
 ----------------------------------------
 
@@ -21,7 +20,6 @@ Thank you
 
 Your Output: 
 2000
-2000
 Thank you
 ----------------------------------------
 
@@ -33,7 +31,6 @@ Expected Output:
 Thank you
 
 Your Output: 
-26000
 6000
 21000
 19000
@@ -67,8 +64,6 @@ Thank you
 
 Your Output: 
 3000
-3000
-26000
 26000
 23000
 6000

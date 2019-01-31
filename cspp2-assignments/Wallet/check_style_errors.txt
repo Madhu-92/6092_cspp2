@@ -54,8 +54,9 @@ Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:75:44: Parameter user2 should be final. [FinalParameters]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:75:58: Parameter amount should be final. [FinalParameters]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:80: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\User.java:100: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 40 errors.
+Checkstyle ends with 41 errors.
 Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\Wallet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\Wallet\Wallet.java:1: Missing a Javadoc comment. [JavadocType]

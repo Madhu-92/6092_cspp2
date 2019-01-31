@@ -73,27 +73,41 @@ public class User {
 		}
 	}
 	public void transfer(String user1, String user2, int amount) {
-		int x = 0;
+		// int x = 0;
+		// for (int i = 0; i < size; i++) {
+		// 	if (wallet[i].getName().equals(user1)) {
+		// 		if (wallet[i].getAmount() < amount) {
+		// 			System.out.println("Insufficient funds");
+		// 		}
+		// 		if (wallet[i].getAmount() < 0) {
+		// 			System.out.println("Negative amount");
+		// 		}
+		// 		x = wallet[i].getAmount() - amount;
+		// 		wallet[i].setAmount(x);
+		// 		break;
+		// 	}
+		// }
+		// for (int i = 0; i < size; i++) {
+		// 	if (wallet[i].getName().equals(user2)) {
+		// 		x = wallet[i].getAmount() + amount;
+		// 		wallet[i].setAmount(x);
+		// 		break;
+		// 	}
+		// }
 		for (int i = 0; i < size; i++) {
-			if (wallet[i].getName().equals(user1)) {
-				if (wallet[i].getAmount() < amount) {
+			if (wallet[i].name.equals(user1)) {
+				if (wallet[i].amount < amount) {
 					System.out.println("Insufficient funds");
+					break;
 				}
-				if (wallet[i].getAmount() < 0) {
-					System.out.println("Negative amount");
-				}
-				x = wallet[i].getAmount() - amount;
-				wallet[i].setAmount(x);
-				break;
+				wallet[i].amount = wallet[i].amount - amount;
+			}
+
+			if (wallet[i].name.equals(user2)) {
+				wallet[i].amount = wallet[i].amount + amount;
 			}
 		}
-		for (int i = 0; i < size; i++) {
-			if (wallet[i].getName().equals(user2)) {
-				x = wallet[i].getAmount() + amount;
-				wallet[i].setAmount(x);
-				break;
-			}
-		}
+
 
 	}
 }

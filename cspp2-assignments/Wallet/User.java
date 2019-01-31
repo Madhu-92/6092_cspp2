@@ -56,10 +56,10 @@ public class User {
 		if (amount >= 0 && temp.amount >= amount) {
 			temp.amount = temp.amount - amount;
 		}
-		if (temp.amount < amount) {
+		else if (temp.amount < amount) {
 			System.out.println("Insufficient funds");
 		}
-		if (amount < 0) {
+		else {
 			System.out.println("Negative amount");
 		}
 		// break;

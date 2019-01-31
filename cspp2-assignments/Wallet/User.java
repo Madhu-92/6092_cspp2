@@ -11,7 +11,7 @@ public class User {
 		wallet = new Wallet[num];
 		size = 0;
 	}
-	public void setName(String name){
+	public void setName(String name) {
 		this.name = name;
 	}
 	public void addWallet(Wallet obj) {
@@ -27,6 +27,7 @@ public class User {
 		}
 	}
 	public void credit(String name, int amount) {
+
 		int x = 0;
 		for (int i = 0; i < size; i++) {
 			if (wallet[i].getName().equals(name)) {
@@ -34,32 +35,34 @@ public class User {
 					System.out.println("Negative amount");
 				}
 				x = wallet[i].getAmount() + amount;
+				// System.out.println(x);
 				wallet[i].setAmount(x);
 				// System.out.println(wallet[i].getAmount());
 				break;
 			}
 		}
+
 	}
 	public void debit(String name, int amount) {
-		for (int i = 0; i < size; i++) {
-			if (wallet[i].getName().equals(name)) {
-				if (wallet[i].getAmount() < amount) {
-					System.out.println("Insufficient funds");
-				}
-				if (amount < 0) {
-					System.out.println("Negative amount");
-				}
-
-			}
-		}
+		Wallet temp = new Wallet();
 		int x = 0;
 		for (int i = 0; i < size; i++) {
 			if (wallet[i].getName().equals(name)) {
-				x = wallet[i].getAmount() - amount;
-				wallet[i].setAmount(x);
+				// System.out.println("Insufficient funds");
+				temp = wallet[i];
 				break;
 			}
 		}
+		if (amount >= 0 && temp.amount >= amount) {
+			temp.amount = temp.amount - amount;
+		}
+		if (temp.amount < amount) {
+			System.out.println("Insufficient funds");
+		}
+		if (amount < 0) {
+			System.out.println("Negative amount");
+		}
+		// break;
 	}
 	public void balance(String name) {
 		for (int i = 0; i < size; i++) {

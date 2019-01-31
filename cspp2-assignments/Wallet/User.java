@@ -27,16 +27,16 @@ public class User {
 		}
 	}
 	public void credit(String name, int amount) {
-		Wallet temp1 = new Wallet();
+		Wallet a = new Wallet();
 		// int x = 0;
 		for (int i = 0; i < size; i++) {
 			if (wallet[i].getName().equals(name)) {
-				temp1 = wallet[i];
+				a = wallet[i];
 				break;
 			}
 		}
 		if (amount > 0) {
-			temp1.amount = temp1.amount + amount;
+			a.amount = a.amount + amount;
 		}
 		if (amount < 0) {
 			System.out.println("Negative amount");
@@ -44,25 +44,22 @@ public class User {
 
 	}
 	public void debit(String name, int amount) {
-		Wallet temp = new Wallet();
-		// int x = 0;
+		Wallet b = new Wallet();
 		for (int i = 0; i < size; i++) {
 			if (wallet[i].getName().equals(name)) {
-				// System.out.println("Insufficient funds");
-				temp = wallet[i];
+				b = wallet[i];
 				break;
 			}
 		}
-		if (amount >= 0 && temp.amount >= amount) {
-			temp.amount = temp.amount - amount;
+		if (amount >= 0 && b.amount >= amount) {
+			b.amount = b.amount - amount;
 		}
-		else if (temp.amount < amount) {
+		else if (b.amount < amount) {
 			System.out.println("Insufficient funds");
 		}
 		else {
 			System.out.println("Negative amount");
 		}
-		// break;
 	}
 	public void balance(String name) {
 		for (int i = 0; i < size; i++) {

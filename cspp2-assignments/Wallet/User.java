@@ -27,25 +27,25 @@ public class User {
 		}
 	}
 	public void credit(String name, int amount) {
-
-		int x = 0;
+		Wallet temp1 = new Wallet();
+		// int x = 0;
 		for (int i = 0; i < size; i++) {
 			if (wallet[i].getName().equals(name)) {
-				if (amount < 0) {
-					System.out.println("Negative amount");
-				}
-				x = wallet[i].getAmount() + amount;
-				// System.out.println(x);
-				wallet[i].setAmount(x);
-				// System.out.println(wallet[i].getAmount());
+				temp1 = wallet[i];
 				break;
 			}
+		}
+		if (amount > 0) {
+			temp1.amount = temp1.amount + amount;
+		}
+		if (amount < 0) {
+			System.out.println("Negative amount");
 		}
 
 	}
 	public void debit(String name, int amount) {
 		Wallet temp = new Wallet();
-		int x = 0;
+		// int x = 0;
 		for (int i = 0; i < size; i++) {
 			if (wallet[i].getName().equals(name)) {
 				// System.out.println("Insufficient funds");

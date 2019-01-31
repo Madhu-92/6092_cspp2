@@ -51,7 +51,7 @@ public class User {
 				break;
 			}
 		}
-		if (amount >= 0 && b.amount >= amount) {
+		if (b.amount >= amount) {
 			b.amount = b.amount - amount;
 		}
 		else if (b.amount < amount) {

@@ -33,12 +33,18 @@ public class Game {
 		return -1;
 	}
 	public void winner() {
+		int max = 0;
 		for (int i = 0; i < size; i++) {
-			if (p[i].getScore() >= 200) {
-				// System.out.println(p[i].getScore());
+			// if (p[i].getScore() >= 200) {
+			// 	// System.out.println(p[i].getScore());
+			// 	System.out.println(p[i].getName());
+			// 	break;
+			// 	// return p[i].getName();
+			// }
+			if (max < p[i].getScore()) {
+				max = p[i].getScore();
 				System.out.println(p[i].getName());
 				break;
-				// return p[i].getName();
 			}
 		}
 		// return null;

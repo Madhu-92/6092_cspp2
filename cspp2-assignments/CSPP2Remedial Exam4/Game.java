@@ -1,3 +1,4 @@
+// import java.util.Arrays;
 public class Game {
 	int count;
 	Player[] p;
@@ -33,19 +34,19 @@ public class Game {
 		return -1;
 	}
 	public void winner() {
-		int max = p[0].getScore();
+		int temp;
 		for (int i = 0; i < size; i++) {
-			// if (p[i].getScore() >= 200) {
-			// 	// System.out.println(p[i].getScore());
-			// 	System.out.println(p[i].getName());
-			// 	break;
-			// 	// return p[i].getName();
-			// }
-			if (p[i].getScore() > max) {
-				max = p[i].getScore();
+			if (p[i].getScore() >= 100) {
+				// System.out.println(p[i].getScore());
 				System.out.println(p[i].getName());
 				break;
+				// return p[i].getName();
 			}
+			// if (p[i].getScore() > max) {
+			// 	max = p[i].getScore();
+			// 	System.out.println(p[i].getName());
+			// 	break;
+			// }
 		}
 		// return null;
 	}

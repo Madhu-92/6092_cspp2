@@ -3,9 +3,8 @@ Expected Output:
 Alice
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at Game.getp(Game.java:25)
-	at Solution.main(Solution.java:31)
+Alice
+Bob
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -13,9 +12,9 @@ Expected Output:
 Mark
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at Game.getp(Game.java:25)
-	at Solution.main(Solution.java:31)
+Alice
+Bob
+Mark
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -23,8 +22,7 @@ Expected Output:
 Bob
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at Game.getp(Game.java:25)
-	at Solution.main(Solution.java:31)
+Bob
+Alice
 ----------------------------------------
 

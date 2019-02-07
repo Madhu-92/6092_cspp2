@@ -34,8 +34,8 @@ public class Game {
 	}
 	public void winner() {
 		for (int i = 0; i < size; i++) {
-			if (p[i].getScore() <= 100) {
-				System.out.println(p[i].getScore());
+			if (p[i].getScore() >= 100) {
+				// System.out.println(p[i].getScore());
 				System.out.println(p[i].getName());
 				break;
 				// return p[i].getName();

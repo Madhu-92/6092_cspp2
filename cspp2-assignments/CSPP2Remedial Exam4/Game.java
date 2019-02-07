@@ -48,7 +48,7 @@ public class Game {
 				}
 			}
 		}
-		System.out.println(p[size - 1]);
+		System.out.println(p[size - 1].getName());
 		// return null;
 	}
 }

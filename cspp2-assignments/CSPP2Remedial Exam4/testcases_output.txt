@@ -3,15 +3,15 @@ Expected Output:
 Alice
 
 Your Output: 
-Player@1134affc
+Bob
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 Mark
 
 Your Output: 
-Player@1134affc
+Mark
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -19,6 +19,6 @@ Expected Output:
 Bob
 
 Your Output: 
-Player@1134affc
+Mark
 ----------------------------------------
 

@@ -25,8 +25,9 @@ Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Game.java:27:28: Parameter name should be final. [FinalParameters]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Game.java:35:9: Class 'Game' looks like designed for extension (can be subclassed), but the method 'winner' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Game' final or making the method 'winner' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Game.java:35:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Game.java:36: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 27 errors.
 Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Player.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Player.java:1: Missing a Javadoc comment. [JavadocType]

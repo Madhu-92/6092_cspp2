@@ -41,7 +41,7 @@ public class Game {
 			// 	break;
 			// 	// return p[i].getName();
 			// }
-			if (max < p[i].getScore()) {
+			if (max <= p[i].getScore()) {
 				max = p[i].getScore();
 				System.out.println(p[i].getName());
 				break;

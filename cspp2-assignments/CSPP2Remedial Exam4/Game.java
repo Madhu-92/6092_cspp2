@@ -36,18 +36,19 @@ public class Game {
 	public void winner() {
 		int temp;
 		for (int i = 0; i < size; i++) {
-			if (p[i].getScore() >= 100) {
-				// System.out.println(p[i].getScore());
-				System.out.println(p[i].getName());
-				break;
-				// return p[i].getName();
-			}
-			// if (p[i].getScore() > max) {
-			// 	max = p[i].getScore();
+			// if (p[i].getScore() >= 100) {
 			// 	System.out.println(p[i].getName());
 			// 	break;
 			// }
+			for (int j = i + 1; j < size; j++) {
+				if (p[i].getScore() > p[j].getScore()) {
+					temp = p[i].getScore();
+					p[i].setScore(p[j].getScore());
+					p[j].setScore(temp);
+				}
+			}
 		}
+		System.out.println(p[size - 1]);
 		// return null;
 	}
 }

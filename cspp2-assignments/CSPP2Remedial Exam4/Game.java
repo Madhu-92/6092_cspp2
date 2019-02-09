@@ -40,13 +40,14 @@ public class Game {
 				temp = p[i].getScore();
 				// p[i].setScore(p[i+1].getScore());
 				// p[i+1].setScore(temp);
-				
-
+				break;
 			}
+
 			if (temp == p[i].getScore()) {
 				return p[i].getName();
+
 			}
-			break;
+			
 		}
 		// for (int i = 0; i < size; i++) {
 		// 	if (temp == p[i].getScore()) {

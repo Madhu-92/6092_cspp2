@@ -38,8 +38,8 @@ public class Game {
 		for (int i = 0; i < size; i++) {
 			if (temp < p[i].getScore()) {
 				temp = p[i].getScore();
-				p[i].setScore(p[i+1].getScore());
-				p[i+1].setScore(temp);
+				// p[i].setScore(p[i+1].getScore());
+				// p[i+1].setScore(temp);
 
 			}
 			// break;

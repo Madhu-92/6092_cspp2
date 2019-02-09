@@ -70,9 +70,8 @@ Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:12:37: Array brackets at illegal position. [ArrayTypeStyle]
-[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:24:57: Must have at least one statement. [EmptyBlock]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:32: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:35: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:38: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 11 errors.

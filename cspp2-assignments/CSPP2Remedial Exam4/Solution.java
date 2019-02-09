@@ -22,7 +22,7 @@ public class Solution {
 				// if (player == p.getName()) {
 
 					if (score != 1) {
-						// totalScore += score;
+						totalScore += score;
 					} else {
 						totalScore = 0;
 					}

@@ -34,6 +34,7 @@ public class Solution {
 		}
 		
 	}
-	game.winner();
+	System.out.println(game.winner());
+	
 }
 }

@@ -25,8 +25,12 @@ Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Game.java:28:28: Parameter name should be final. [FinalParameters]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Game.java:36:9: Class 'Game' looks like designed for extension (can be subclassed), but the method 'winner' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Game' final or making the method 'winner' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Game.java:36:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Game.java:41:50: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Game.java:41:51: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Game.java:42:36: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Game.java:42:37: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 30 errors.
 Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Player.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Player.java:1: Missing a Javadoc comment. [JavadocType]
@@ -68,5 +72,6 @@ Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:12:37: Array brackets at illegal position. [ArrayTypeStyle]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:32: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:35: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:38: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 11 errors.

@@ -6,12 +6,12 @@ Your Output:
 Bob
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 Mark
 
 Your Output: 
-Mark
+Bob
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########

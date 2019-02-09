@@ -33,22 +33,23 @@ public class Game {
 		}
 		return -1;
 	}
-	public void winner() {
-		int temp;
+	public String winner() {
+		int temp = 0;
 		for (int i = 0; i < size; i++) {
-			// if (p[i].getScore() >= 100) {
-			// 	System.out.println(p[i].getName());
-			// 	break;
-			// }
-			for (int j = i + 1; j < size; j++) {
-				if (p[i].getScore() > p[j].getScore()) {
-					temp = p[i].getScore();
-					p[i].setScore(p[j].getScore());
-					p[j].setScore(temp);
-				}
+			if (temp < p[i].getScore()) {
+				temp = p[i].getScore();
+				p[i].setScore(p[i+1].getScore());
+				p[i+1].setScore(temp);
+
+			}
+			// break;
+		}
+		for (int i = 0; i < size; i++) {
+			if (temp == p[i].getScore()) {
+				return p[i].getName();
 			}
 		}
-		System.out.println(p[size - 1].getName());
-		// return null;
+		return null;
+		// System.out.println(p[]);
 	}
 }

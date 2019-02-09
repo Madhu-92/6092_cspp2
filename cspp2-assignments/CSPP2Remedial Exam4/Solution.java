@@ -21,12 +21,10 @@ public class Solution {
 				//Please complete the code to complete the game.
 				// if (player == p.getName()) {
 
-					if (score == 1) {
+					if (score != 1) {
 						// totalScore += score;
-						totalScore = 0;
 					} else {
-						// totalScore = 0;
-						totalScore += score;
+						totalScore = 0;
 					}
 					System.out.println(totalScore);
 				// }

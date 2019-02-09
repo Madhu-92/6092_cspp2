@@ -46,7 +46,7 @@ public class Game {
 			if (temp == p[i].getScore()) {
 				return p[i].getName();
 			}
-			// break;
+			break;
 		}
 		// for (int i = 0; i < size; i++) {
 		// 	if (temp == p[i].getScore()) {

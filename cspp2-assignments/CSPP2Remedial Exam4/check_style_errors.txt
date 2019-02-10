@@ -70,14 +70,7 @@ Starting audit...
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:12:37: Array brackets at illegal position. [ArrayTypeStyle]
-[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:34: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:37: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:39: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:40: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:43: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:45: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:48: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:51: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:54: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:29:47: ')' is preceded with whitespace. [ParenPad]
+[ERROR] D:\GIT\CSPP2\6092_cspp2\cspp2-assignments\CSPP2Remedial Exam4\Solution.java:31:53: '6' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 10 errors.

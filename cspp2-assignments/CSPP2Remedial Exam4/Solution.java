@@ -30,7 +30,7 @@ public class Solution {
 					totalScore = 0;
 				} else if (score == 6) {
 					totalScore += score;
-					// totalScore = 0;
+					totalScore = 0;
 				} else {
 					totalScore += score;
 				}

@@ -6,12 +6,12 @@ Your Output:
 Alice
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 Mark
 
 Your Output: 
-Mark
+Alice
 ----------------------------------------
 
 ########## Testcase 2: Passed ##########

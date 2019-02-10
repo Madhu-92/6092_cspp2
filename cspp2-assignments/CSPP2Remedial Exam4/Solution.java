@@ -37,7 +37,7 @@ public class Solution {
 					totalScore += score;
 					
 					// game.players[index].addScore(totalScore);
-					totalScore = 0;
+					// totalScore = 0;
 				} else {
 					
 					totalScore += score;

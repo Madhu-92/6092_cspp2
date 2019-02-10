@@ -30,11 +30,11 @@ public class Solution {
 					totalScore = 0;
 				} else if (score == 6) {
 					totalScore += score;
+					game.getp(index).scoreCount(totalScore);
 					totalScore = 0;
 				} else {
 					totalScore += score;
 				}
-				game.getp(index).scoreCount(totalScore);
 			}
 		}
 		System.out.println(game.winner());

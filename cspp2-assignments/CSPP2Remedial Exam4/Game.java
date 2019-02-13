@@ -33,12 +33,14 @@ public class Game {
 		}
 		return -1;
 	}
-	public String winner() {
+	public Player winner() {
 		int temp = 0;
+		Player p1 = null;
 		for (int i = 0; i < size; i++) {
-			if (temp < p[i].getScore() || temp == p[i].getScore()) {
+			if (temp < p[i].getScore()) {
 				temp = p[i].getScore();	
-				return p[i].getName();
+				// return p[i].getName();
+				p1 = p[i];
 			}
 			// if (temp == p[i].getScore()) {
 			// 	return p[i].getName();
@@ -50,7 +52,7 @@ public class Game {
 		// 		return p[i].getName();
 		// 	}
 		// }
-		return null;
+		return p1;
 		// System.out.println(p[]);
 	}
 }

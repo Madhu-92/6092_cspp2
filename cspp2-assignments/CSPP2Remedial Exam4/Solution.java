@@ -37,6 +37,6 @@ public class Solution {
 				}
 			}
 		}
-		System.out.println(game.winner());
+		System.out.println(game.winner().getName());
 	}
 }

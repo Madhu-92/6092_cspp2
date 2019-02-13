@@ -36,24 +36,20 @@ public class Game {
 	public String winner() {
 		int temp = 0;
 		for (int i = 0; i < size; i++) {
-			if (temp < p[i].getScore()) {
+			if (temp < p[i].getScore() || temp == p[i].getScore()) {
 				temp = p[i].getScore();
-				// p[i].setScore(p[i+1].getScore());
-				// p[i+1].setScore(temp);
-				
+				return p[i].getName();	
 			}
-
-			// if (temp == p[i].getScore()) {
-			// 	return p[i].getName();
-
-			// }
-			
-		}
-		for (int i = 0; i < size; i++) {
 			if (temp == p[i].getScore()) {
 				return p[i].getName();
 			}
+			
 		}
+		// for (int i = 0; i < size; i++) {
+		// 	if (temp == p[i].getScore()) {
+		// 		return p[i].getName();
+		// 	}
+		// }
 		return null;
 		// System.out.println(p[]);
 	}

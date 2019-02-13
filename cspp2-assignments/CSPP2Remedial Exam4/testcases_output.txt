@@ -1,9 +1,9 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 Alice
 
 Your Output: 
-Alice
+null
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -11,7 +11,7 @@ Expected Output:
 Mark
 
 Your Output: 
-Alice
+null
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -19,6 +19,6 @@ Expected Output:
 Bob
 
 Your Output: 
-Olive
+null
 ----------------------------------------
 
